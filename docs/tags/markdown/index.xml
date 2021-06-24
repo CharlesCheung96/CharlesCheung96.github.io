@@ -4,12 +4,26 @@
         <link>/tags/markdown/</link>
         <description>Markdown - Tag - Charles&#39; Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>xiaoshuaizx@gmail.com (CharlesCheung)</managingEditor>
-            <webMaster>xiaoshuaizx@gmail.com (CharlesCheung)</webMaster><lastBuildDate>Sun, 01 Dec 2019 21:57:40 &#43;0800</lastBuildDate><atom:link href="/tags/markdown/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>xiaoshuaizx@gmail.com (CharlesCheung)</webMaster><lastBuildDate>Tue, 01 Dec 2020 21:57:40 &#43;0800</lastBuildDate><atom:link href="/tags/markdown/" rel="self" type="application/rss+xml" /><item>
     <title>Markdown 基本语法</title>
-    <link>/2019/markdown-basic/</link>
-    <pubDate>Sun, 01 Dec 2019 21:57:40 &#43;0800</pubDate>
+    <link>/2020/markdown/</link>
+    <pubDate>Tue, 01 Dec 2020 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
-    <guid>/2019/markdown-basic/</guid>
+    <guid>/2020/markdown/</guid>
+    <description><![CDATA[目录 {:toc} 1. 斜体和粗体 1 2 3 4 *斜体*或_斜体_ **粗体** ***加粗斜体*** ~~删除线~~ view 斜体或_斜体_ 粗体 加粗斜体 删除线 2. 分级标题 1 2 3]]></description>
+</item><item>
+    <title>主题文档 - 内容</title>
+    <link>/2020/theme-documentation-content/</link>
+    <pubDate>Thu, 05 Mar 2020 16:30:05 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>/2020/theme-documentation-content/</guid>
+    <description><![CDATA[<p>了解如何在 <strong>LoveIt</strong> 主题中快速, 直观地创建和组织内容.</p>]]></description>
+</item><item>
+    <title>Hugo Markdown 基本语法</title>
+    <link>/2020/markdown-basic/</link>
+    <pubDate>Tue, 01 Dec 2020 21:57:40 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>/2020/markdown-basic/</guid>
     <description><![CDATA[<p>这篇文章提供了可以在 Hugo 的文章中使用的基本 Markdown 语法示例.</p>]]></description>
 </item></channel>
 </rss>

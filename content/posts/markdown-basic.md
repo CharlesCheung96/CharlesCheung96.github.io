@@ -1,6 +1,6 @@
 ---
 weight: 4
-title: "Markdown 基本语法"
+title: "Hugo Markdown 基本语法"
 date: 2020-12-01T21:57:40+08:00
 lastmod: 2021-01-01T16:45:40+08:00
 draft: false

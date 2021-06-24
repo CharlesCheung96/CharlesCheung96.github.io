@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Markdown 基本语法 - Charles&#39; Blog</title><meta name="Description" content="这篇文章展示了基本的 Markdown 语法和格式."><meta property="og:title" content="Markdown 基本语法" />
+<meta property="og:description" content="这篇文章展示了基本的 Markdown 语法和格式." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2020/markdown/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-12-01T21:57:40&#43;08:00" />
+<meta property="article:modified_time" content="2021-01-01T16:45:40&#43;08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Markdown 基本语法"/>
+<meta name="twitter:description" content="这篇文章展示了基本的 Markdown 语法和格式."/>
+<meta name="application-name" content="Charles&#39; web Blog">
+<meta name="apple-mobile-web-app-title" content="Charles&#39; web Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/2020/markdown/" /><link rel="prev" href="/2020/theme-documentation-basics/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Markdown 基本语法",
+        "inLanguage": "zh-cn",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/2020\/markdown\/"
+        },"image": ["\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Markdown, HTML","wordcount":  5333 ,
+        "url": "\/2020\/markdown\/","datePublished": "2020-12-01T21:57:40+08:00","dateModified": "2021-01-01T16:45:40+08:00","publisher": {
+            "@type": "Organization",
+            "name": "Demi_YuHongJun"},"author": {
+                "@type": "Person",
+                "name": "Demi_YuHongJun"
+            },"description": "这篇文章展示了基本的 Markdown 语法和格式."
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Charles&#39; Blog">Charles&#39; Blog</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 全部文章 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Charles&#39; Blog">Charles&#39; Blog</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">全部文章</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Markdown 基本语法</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Demi_YuHongJun</a></span>&nbsp;<span class="post-category">included in <a href="/categories/markdown/"><i class="far fa-folder fa-fw"></i>Markdown</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-12-01">2020-12-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;5333 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;11 minutes&nbsp;<span id="/2020/markdown/" class="leancloud_visitors" data-flag-title="Markdown 基本语法">
+                        <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#1-斜体和粗体">1. 斜体和粗体</a></li>
+            <li><a href="#2-分级标题">2. 分级标题</a></li>
+            <li><a href="#3-超链接">3. 超链接</a>
+              <ul>
+                <li><a href="#31-行内式">3.1. 行内式</a></li>
+                <li><a href="#32-参考式">3.2. 参考式</a></li>
+                <li><a href="#33-自动链接">3.3. 自动链接</a></li>
+              </ul>
+            </li>
+            <li><a href="#4-锚点">4. 锚点</a></li>
+            <li><a href="#5-列表">5. 列表</a>
+              <ul>
+                <li><a href="#51-无序列表">5.1. 无序列表</a></li>
+                <li><a href="#52-有序列表">5.2. 有序列表</a></li>
+                <li><a href="#53-定义型列表">5.3. 定义型列表</a></li>
+                <li><a href="#53-列表缩进">5.3. 列表缩进</a></li>
+                <li><a href="#54-包含段落的列表">5.4. 包含段落的列表</a></li>
+                <li><a href="#55-包含引用的列表">5.5. 包含引用的列表</a></li>
+                <li><a href="#56-包含代码区块的引用">5.6. 包含代码区块的引用</a></li>
+                <li><a href="#57-一个特殊情况">5.7. 一个特殊情况</a></li>
+              </ul>
+            </li>
+            <li><a href="#6-引用">6. 引用</a>
+              <ul>
+                <li><a href="#61-引用的多层嵌套">6.1. 引用的多层嵌套</a></li>
+                <li><a href="#62-引用其它要素">6.2. 引用其它要素</a></li>
+              </ul>
+            </li>
+            <li><a href="#7-插入图像">7. 插入图像</a>
+              <ul>
+                <li><a href="#71-行内式">7.1. 行内式</a></li>
+              </ul>
+            </li>
+            <li><a href="#8-内容目录">8. 内容目录</a></li>
+            <li><a href="#9-注脚">9. 注脚</a></li>
+            <li><a href="#10-latex-公式">10. LaTeX 公式</a>
+              <ul>
+                <li><a href="#101--表示行内公式">10.1. $ 表示行内公式：</a></li>
+                <li><a href="#102--表示整行公式">10.2 $$ 表示整行公式：</a></li>
+              </ul>
+            </li>
+            <li><a href="#11-流程图">11. 流程图</a></li>
+            <li><a href="#12-表格">12 .表格</a></li>
+            <li><a href="#13-分隔线">13. 分隔线</a></li>
+            <li><a href="#14-代码">14. 代码</a>
+              <ul>
+                <li><a href="#141-行内式">14.1. 行内式</a></li>
+                <li><a href="#142-缩进式多行代码">14.2. 缩进式多行代码</a></li>
+                <li><a href="#143-用六个包裹多行代码">14.3. 用六个`包裹多行代码</a></li>
+                <li><a href="#144-html-原始码">14.4. HTML 原始码</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><ul>
+<li>目录
+{:toc}</li>
+</ul>
+<hr>
+<h4 id="1-斜体和粗体">1. 斜体和粗体</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">*斜体*或_斜体_
+**粗体**
+***加粗斜体***
+~~删除线~~
+</code></pre></td></tr></table>
+</div>
+</div><p>view</p>
+<p><em>斜体</em>或_斜体_</p>
+<p><strong>粗体</strong></p>
+<p><em><strong>加粗斜体</strong></em></p>
+<p><del>删除线</del></p>
+<hr>
+<h4 id="2-分级标题">2. 分级标题</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback"># 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+</code></pre></td></tr></table>
+</div>
+</div><p>由于用了[TOC]标记编辑器会把所有标题写到目录大纲中，在这里写的演示标题也会列进去，所以就不演示了。同学们自己在编辑器中观察，很简单，一级标题字号最大，依级递减。</p>
+<hr>
+<h4 id="3-超链接">3. 超链接</h4>
+<p>Markdown 支持两种形式的链接语法： 行内式和参考式两种形式，行内式一般使用较多。</p>
+<h5 id="31-行内式">3.1. 行内式</h5>
+<p>语法说明：</p>
+<p>[]里写链接文字，()里写链接地址, ()中的”“中可以为链接指定title属性，title属性可加可不加。title属性的效果是鼠标悬停在链接上会出现指定的 title文字。链接地址与链接标题前有一个空格。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">欢迎来到[Demi的随笔和技术空间](https://yuhongjun.github.io/)
+
+欢迎来到[Demi的随笔和技术空间](https://yuhongjun.github.io/ &#34;Demi的随笔和技术空间&#34;)
+</code></pre></td></tr></table>
+</div>
+</div><p>view</p>
+<p>欢迎来到<a href="https://yuhongjun.github.io/" target="_blank" rel="noopener noreffer">Demi的随笔和技术空间</a></p>
+<p>欢迎来到<a href="https://yuhongjun.github.io/" title="Demi的随笔和技术空间" target="_blank" rel="noopener noreffer">Demi的随笔和技术空间</a></p>
+<h5 id="32-参考式">3.2. 参考式</h5>
+<p>参考式超链接一般用在学术论文上面，或者另一种情况，如果某一个链接在文章中多处使用，那么使用引用 的方式创建链接将非常好，它可以让你对链接进行统一的管理。</p>
+<p>语法说明：
+参考式链接分为两部分，文中的写法 [链接文字][链接标记]，在文本的任意位置添加[链接标记]:链接地址 “链接标题”，链接地址与链接标题前有一个空格。</p>
+<p>如果链接文字本身可以做为链接标记，你也可以写成[链接文字][]
+[链接文字]：链接地址的形式，见代码的最后一行。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">我经常去的几个网站[Google][1],[Demi的随笔和技术空间][2],[Demi的随笔和技术空间][]。
+
+[1]:http://www.google.com
+[2]:https://yuhongjun.github.io/ &#34;Demi的随笔和技术空间&#34;
+[Demi的随笔和技术空间]:https://yuhongjun.github.io/
+</code></pre></td></tr></table>
+</div>
+</div><p>我经常去的几个网站<a href="http://www.google.com" target="_blank" rel="noopener noreffer">Google</a>,<a href="https://yuhongjun.github.io/" title="Demi的随笔和技术空间" target="_blank" rel="noopener noreffer">Demi的随笔和技术空间</a>,<a href="https://yuhongjun.github.io/" target="_blank" rel="noopener noreffer">Demi的随笔和技术空间</a>。</p>
+<h5 id="33-自动链接">3.3. 自动链接</h5>
+<p>语法说明：
+Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用&lt;&gt;包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="p">&lt;</span><span class="nt">http:</span><span class="err">//</span><span class="na">example</span><span class="err">.</span><span class="na">com</span><span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">address</span><span class="err">@</span><span class="na">example</span><span class="err">.</span><span class="na">com</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>view</p>
+<p><a href="http://example.com/">http://example.com/</a>
+<a href="mailto:address@example.com">address@example.com</a></p>
+<hr>
+<h4 id="4-锚点">4. 锚点</h4>
+<p>网页中，锚点其实就是页内超链接，也就是链接本文档内部的某些元素，实现当前页面中的跳转。比如我这里写下一个锚点，点击回到目录，就能跳转到目录。 在目录中点击这一节，就能跳过来。还有下一节的注脚。这些根本上都是用锚点来实现的。</p>
+<p>注意：</p>
+<ol>
+<li>Markdown Extra 只支持在标题后插入锚点，其它地方无效。</li>
+<li>Leanote 编辑器右侧显示效果区域暂时不支持锚点跳转，所以点来点去发现没有跳转不必惊慌，但是你发布成笔记或博文后是支持跳转的。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="gu">## 0. 跳转测试{#index}
+</span><span class="gu"></span>
+跳转到[跳转测试](#index)
+</code></pre></td></tr></table>
+</div>
+</div><hr>
+<h4 id="5-列表">5. 列表</h4>
+<h5 id="51-无序列表">5.1. 无序列表</h5>
+<p>使用 *，+，- 表示无序列表。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="k">-</span> 无序列表项 一
+<span class="k">-</span> 无序列表项 二
+<span class="k">-</span> 无序列表项 三
+</code></pre></td></tr></table>
+</div>
+</div><p>view</p>
+<ul>
+<li>无序列表项 一</li>
+<li>无序列表项 二</li>
+<li>无序列表项 三</li>
+</ul>
+<h5 id="52-有序列表">5.2. 有序列表</h5>
+<p>有序列表则使用数字接着一个英文句点。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="k">1.</span> 有序列表项 一
+<span class="k">2.</span> 有序列表项 二
+<span class="k">3.</span> 有序列表项 三
+</code></pre></td></tr></table>
+</div>
+</div><p>view</p>
+<ol>
+<li>有序列表项 一</li>
+<li>有序列表项 二</li>
+<li>有序列表项 三</li>
+</ol>
+<h5 id="53-定义型列表">5.3. 定义型列表</h5>
+<p>语法说明：</p>
+<p>定义型列表由名词和解释组成。一行写上定义，紧跟一行写上解释。解释的写法:紧跟一个缩进(Tab)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">代码块 1 Markdown:    轻量级文本标记语言，可以转换成html，pdf等格式（左侧有一个可见的冒号和四个不可见的空格）代码块 2:   这是代码块的定义（左侧有一个可见的冒号和四个不可见的空格）        代码块（左侧有八个不可见的空格）
+</code></pre></td></tr></table>
+</div>
+</div><p>view</p>
+<dl>
+<dt>代码块 1 Markdown</dt>
+<dd>轻量级文本标记语言，可以转换成html，pdf等格式（左侧有一个可见的冒号和四个不可见的空格）</dd>
+<dt>代码块 2</dt>
+<dd>这是代码块的定义（左侧有一个可见的冒号和四个不可见的空格）
+<pre><code>代码块（左侧有八个不可见的空格）
+</code></pre>
+</dd>
+</dl>
+<h5 id="53-列表缩进">5.3. 列表缩进</h5>
+<p>语法说明：</p>
+<p>列表项目标记通常是放在最左边，但是其实也可以缩进，最多 3 个空格，项目标记后面则一定要接着至少一个空格或制表符。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="k">*</span>   轻轻的我走了， 正如我轻轻的来； 我轻轻的招手， 作别西天的云彩。那河畔的金柳， 是夕阳中的新娘； 波光里的艳影， 在我的心头荡漾。 软泥上的青荇， 油油的在水底招摇； 在康河的柔波里， 我甘心做一条水草！ *   那榆荫下的一潭， 不是清泉， 是天上虹； 揉碎在浮藻间， 沉淀着彩虹似的梦。 寻梦？撑一支长篙， 向青草更青处漫溯； 满载一船星辉， 在星辉斑斓里放歌。 但我不能放歌， 悄悄是别离的笙箫； 夏虫也为我沉默， 沉默是今晚的康桥！ 悄悄的我走了， 正如我悄悄的来； 我挥一挥衣袖， 不带走一片云彩。
+</code></pre></td></tr></table>
+</div>
+</div><p>view</p>
+<ul>
+<li>轻轻的我走了， 正如我轻轻的来； 我轻轻的招手， 作别西天的云彩。
+那河畔的金柳， 是夕阳中的新娘； 波光里的艳影， 在我的心头荡漾。
+软泥上的青荇， 油油的在水底招摇； 在康河的柔波里， 我甘心做一条水草！</li>
+<li>那榆荫下的一潭， 不是清泉， 是天上虹； 揉碎在浮藻间， 沉淀着彩虹似的梦。
+寻梦？撑一支长篙， 向青草更青处漫溯； 满载一船星辉， 在星辉斑斓里放歌。
+但我不能放歌， 悄悄是别离的笙箫； 夏虫也为我沉默， 沉默是今晚的康桥！
+悄悄的我走了， 正如我悄悄的来； 我挥一挥衣袖， 不带走一片云彩。</li>
+</ul>
+<h5 id="54-包含段落的列表">5.4. 包含段落的列表</h5>
+<p>语法说明：</p>
+<p>列表项目可以包含多个段落，每个项目下的段落都必须缩进 4 个空格或是 1 个制表符（显示效果与代码一致）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="k">*</span>   轻轻的我走了， 正如我轻轻的来； 我轻轻的招手， 作别西天的云彩。那河畔的金柳， 是夕阳中的新娘； 波光里的艳影， 在我的心头荡漾。 软泥上的青荇， 油油的在水底招摇； 在康河的柔波里， 我甘心做一条水草！     那榆荫下的一潭， 不是清泉， 是天上虹； 揉碎在浮藻间， 沉淀着彩虹似的梦。 寻梦？撑一支长篙， 向青草更青处漫溯； 满载一船星辉， 在星辉斑斓里放歌。 但我不能放歌， 悄悄是别离的笙箫； 夏虫也为我沉默， 沉默是今晚的康桥！*    悄悄的我走了， 正如我悄悄的来； 我挥一挥衣袖， 不带走一片云彩。
+</code></pre></td></tr></table>
+</div>
+</div><p>view</p>
+<ul>
+<li>
+<p>轻轻的我走了， 正如我轻轻的来； 我轻轻的招手， 作别西天的云彩。
+那河畔的金柳， 是夕阳中的新娘； 波光里的艳影， 在我的心头荡漾。
+软泥上的青荇， 油油的在水底招摇； 在康河的柔波里， 我甘心做一条水草！</p>
+<p>那榆荫下的一潭， 不是清泉， 是天上虹； 揉碎在浮藻间， 沉淀着彩虹似的梦。
+寻梦？撑一支长篙， 向青草更青处漫溯； 满载一船星辉， 在星辉斑斓里放歌。
+但我不能放歌， 悄悄是别离的笙箫； 夏虫也为我沉默， 沉默是今晚的康桥！</p>
+</li>
+<li>
+<p>悄悄的我走了， 正如我悄悄的来； 我挥一挥衣袖， 不带走一片云彩。</p>
+</li>
+</ul>
+<h5 id="55-包含引用的列表">5.5. 包含引用的列表</h5>
+<p>语法说明：</p>
+<p>如果要在列表项目内放进引用，那 &gt; 就需要缩进：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="k">*</span>   阅读的方法:    &gt; 打开书本。    &gt; 打开电灯。
+</code></pre></td></tr></table>
+</div>
+</div><p>view</p>
+<ul>
+<li>
+<p>阅读的方法:</p>
+<blockquote>
+<p>打开书本。
+打开电灯。</p>
+</blockquote>
+</li>
+</ul>
+<h5 id="56-包含代码区块的引用">5.6. 包含代码区块的引用</h5>
+<p>语法说明：
+如果要放代码区块的话，该区块就需要缩进两次，也就是 8 个空格或是 2 个制表符：</p>
+<h5 id="57-一个特殊情况">5.7. 一个特殊情况</h5>
+<p>在特殊情况下，项目列表很可能会不小心产生，像是下面这样的写法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="k">1986.</span> What a great season.
+</code></pre></td></tr></table>
+</div>
+</div><p>会显示成：</p>
+<ol start="1986">
+<li>What a great season.</li>
+</ol>
+<p>换句话说，也就是在行首出现数字-句点-空白，要避免这样的状况，你可以在句点前面加上反斜杠：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">1986\. What a great season.
+</code></pre></td></tr></table>
+</div>
+</div><p>才会正常显示成：</p>
+<p>1986. What a great season.</p>
+<hr>
+<h4 id="6-引用">6. 引用</h4>
+<p>语法说明：</p>
+<p>引用需要在被引用的文本前加上&gt;符号。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="k">&gt; </span><span class="ge">这是一个有两段文字的引用,无意义的占行文字1.无意义的占行文字2.&gt; 无意义的占行文字3.无意义的占行文字4.
+</span></code></pre></td></tr></table>
+</div>
+</div><p>view</p>
+<blockquote>
+<p>这是一个有两段文字的引用,
+无意义的占行文字1.
+无意义的占行文字2.</p>
+</blockquote>
+<blockquote>
+<p>无意义的占行文字3.
+无意义的占行文字4.</p>
+</blockquote>
+<h5 id="61-引用的多层嵌套">6.1. 引用的多层嵌套</h5>
+<p>区块引用可以嵌套（例如：引用内的引用），只要根据层次加上不同数量的 &gt; ：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">&gt;&gt;&gt; 请问 Markdwon 怎么用？ - 小白&gt;&gt; 自己看教程！ - 愤青&gt; 教程在哪？ - 小白
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<blockquote>
+<blockquote>
+<p>请问 Markdwon 怎么用？ - 小白</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>自己看教程！ - 愤青</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>教程在哪？ - 小白</p>
+</blockquote>
+<h5 id="62-引用其它要素">6.2. 引用其它要素</h5>
+<p>引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="k">&gt; </span><span class="ge">1.   这是第一行列表项。&gt; 2.   这是第二行列表项。&gt; &gt; 给出一些例子代码：&gt; &gt;     return shell_exec(&#34;echo $input | $markdown_script&#34;);
+</span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<ol>
+<li>这是第一行列表项。</li>
+<li>这是第二行列表项。</li>
+</ol>
+<p>给出一些例子代码：</p>
+<pre><code>return shell_exec(&quot;echo $input | $markdown_script&quot;);
+</code></pre>
+</blockquote>
+<hr>
+<h4 id="7-插入图像">7. 插入图像</h4>
+<p>图片的创建方式与超链接相似，而且和超链接一样也有两种写法，行内式和参考式写法。</p>
+<p>语法中图片Alt的意思是如果图片因为某些原因不能显示，就用定义的图片Alt文字来代替图片。 图片Title则和链接中的Title一样，表示鼠标悬停与图片上时出现的文字。 Alt 和 Title 都不是必须的，可以省略，但建议写上。</p>
+<h5 id="71-行内式">7.1. 行内式</h5>
+<p>语法说明：<figure><a class="lightgallery" href="../../../../../Downloads/temp/%25E5%259B%25BE%25E7%2589%2587%25E5%259C%25B0%25E5%259D%2580" title="图片Alt" data-thumbnail="../../../../../Downloads/temp/%25E5%259B%25BE%25E7%2589%2587%25E5%259C%25B0%25E5%259D%2580" data-sub-html="<h2>图片Title</h2><p>图片Alt</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="../../../../../Downloads/temp/%25E5%259B%25BE%25E7%2589%2587%25E5%259C%25B0%25E5%259D%2580"
+            data-srcset="../../../../../Downloads/temp/%25E5%259B%25BE%25E7%2589%2587%25E5%259C%25B0%25E5%259D%2580, ../../../../../Downloads/temp/%25E5%259B%25BE%25E7%2589%2587%25E5%259C%25B0%25E5%259D%2580 1.5x, ../../../../../Downloads/temp/%25E5%259B%25BE%25E7%2589%2587%25E5%259C%25B0%25E5%259D%2580 2x"
+            data-sizes="auto"
+            alt="../../../../../Downloads/temp/%25E5%259B%25BE%25E7%2589%2587%25E5%259C%25B0%25E5%259D%2580" />
+    </a><figcaption class="image-caption">图片Title</figcaption>
+    </figure></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">美丽风景： ![<span class="nt">美丽风景</span>](<span class="na">https://yuhongjun.github.io/assets/media/scenery.jpeg &#34;美丽风景&#34;</span>)
+</code></pre></td></tr></table>
+</div>
+</div><p>view
+美丽风景：
+<figure><a class="lightgallery" href="https://yuhongjun.github.io/assets/media/scenery.jpeg" title="美丽风景" data-thumbnail="https://yuhongjun.github.io/assets/media/scenery.jpeg" data-sub-html="<h2>美丽风景</h2><p>美丽风景</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="https://yuhongjun.github.io/assets/media/scenery.jpeg"
+            data-srcset="https://yuhongjun.github.io/assets/media/scenery.jpeg, https://yuhongjun.github.io/assets/media/scenery.jpeg 1.5x, https://yuhongjun.github.io/assets/media/scenery.jpeg 2x"
+            data-sizes="auto"
+            alt="https://yuhongjun.github.io/assets/media/scenery.jpeg" />
+    </a><figcaption class="image-caption">美丽风景</figcaption>
+    </figure></p>
+<p>7.2. 参考式</p>
+<p>语法说明：</p>
+<p>在文档要插入图片的地方写![图片Alt][标记]</p>
+<p>在文档的最后写上[标记]:图片地址 “Title”</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">![<span class="nt">美丽风景</span>](<span class="na">https://yuhongjun.github.io/assets/media/scenery.jpeg &#34;美丽风景&#34;</span>)[scenery]:https://yuhongjun.github.io/assets/media/scenery.jpeg &#34;美丽风景&#34;
+</code></pre></td></tr></table>
+</div>
+</div><p>view
+<figure><a class="lightgallery" href="https://yuhongjun.github.io/assets/media/scenery.jpeg" title="美丽风景" data-thumbnail="https://yuhongjun.github.io/assets/media/scenery.jpeg" data-sub-html="<h2>美丽风景</h2><p>美丽风景</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="https://yuhongjun.github.io/assets/media/scenery.jpeg"
+            data-srcset="https://yuhongjun.github.io/assets/media/scenery.jpeg, https://yuhongjun.github.io/assets/media/scenery.jpeg 1.5x, https://yuhongjun.github.io/assets/media/scenery.jpeg 2x"
+            data-sizes="auto"
+            alt="https://yuhongjun.github.io/assets/media/scenery.jpeg" />
+    </a><figcaption class="image-caption">美丽风景</figcaption>
+    </figure></p>
+<hr>
+<h4 id="8-内容目录">8. 内容目录</h4>
+<p>在段落中填写 [TOC] 以显示全文内容的目录结构。</p>
+<p>效果参见最上方的目录</p>
+<hr>
+<h4 id="9-注脚">9. 注脚</h4>
+<p>语法说明：</p>
+<p>在需要添加注脚的文字后加上脚注名字[^注脚名字],称为加注。 然后在文本的任意位置(一般在最后)添加脚注，脚注前必须有对应的脚注名字。</p>
+<p>注意：经测试注脚与注脚之间必须空一行，不然会失效。成功后会发现，即使你没有把注脚写在文末，经Markdown转换后，也会自动归类到文章的最后。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Leanote[^Le] 编辑器进行书写。[^1]:Markdown是一种纯文本标记语言[^2]:HyperText Markup Language 超文本标记语言[^Le]:开源笔记平台，支持Markdown和笔记直接发为博文
+</code></pre></td></tr></table>
+</div>
+</div><p>view</p>
+<p>使用 Markdown<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>可以效率的书写文档, 直接转换成 HTML<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>, 你可以使用 Leanote<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> 编辑器进行书写。</p>
+<p>注：脚注自动被搬运到最后面，请到文章末尾查看，并且脚注后方的链接可以直接跳转回到加注的地方。</p>
+<hr>
+<h4 id="10-latex-公式">10. LaTeX 公式</h4>
+<h5 id="101--表示行内公式">10.1. $ 表示行内公式：</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。
+</code></pre></td></tr></table>
+</div>
+</div><p>view
+质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。</p>
+<h5 id="102--表示整行公式">10.2 $$ 表示整行公式：</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">$$\sum_{i=1}^n a_i=0$$
+$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$
+$$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k} $$  # Hugo 将md渲染为html时会发生冲突
+$$\sum^{j-1}_{k=0}{\widehat{\gamma}\_{kj} z_k} $$  # 经过转义后可正常渲染
+</code></pre></td></tr></table>
+</div>
+</div><p>$$\sum_{i=1}^n a_i=0$$</p>
+<p>$$f(x_1,x_x,\ldots,x_n) = x_1^2 + x_2^2 + \cdots + x_n^2 $$</p>
+<p>$$\sum^{j-1}<em>{k=0}{\widehat{\gamma}</em>{kj} z_k} $$</p>
+<p>$$\sum^{j-1}_{k=0}{\widehat{\gamma}_{kj} z_k} $$</p>
+<p>访问 <a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" title="MathJax basic tutorial and quick reference" target="_blank" rel="noopener noreffer">MathJax</a> 参考更多使用方法。</p>
+<hr>
+<h4 id="11-流程图">11. 流程图</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">st=&gt;start: Start:&gt;http://www.google.com[blank]
+e=&gt;end:&gt;http://www.google.com
+op1=&gt;operation: My Operation
+sub1=&gt;subroutine: My Subroutine
+cond=&gt;condition: Yes or No?:&gt;http://www.google.com
+io=&gt;inputoutput: catch something...
+para=&gt;parallel: parallel tasks
+
+st-&gt;op1-&gt;cond
+cond(yes)-&gt;io-&gt;e
+cond(no)-&gt;para
+para(path1, bottom)-&gt;sub1(right)-&gt;op1
+para(path2, top)-&gt;op1
+</code></pre></td></tr></table>
+</div>
+</div><p>you can  try different in textarea,then run .</p>
+<div>
+<textarea id="code" style="width: 100%;" rows="11">
+st=>start: Start|past:>https://yuhongjun.github.io[blank]
+e=>end: End:>https://yuhongjun.github.io
+op1=>operation: My Operation|past
+op2=>operation: Stuff|current
+sub1=>subroutine: My Subroutine|invalid
+cond=>condition: Yes
+or No?|approved:>https://yuhongjun.github.io
+c2=>condition: Good idea|rejected
+io=>inputoutput: catch something...|request
+st->op1(right)->cond
+cond(yes, right)->c2
+cond(no)->sub1(left)->op1
+c2(yes)->io->e
+c2(no)->op2->e
+</textarea>
+</div>
+<div>
+<button id="run" type="button">Run</button>
+</div>
+<div id="canvas"></div>
+<p>更多语法参考：<a href="https://flowchart.js.org/" title="flowchart" target="_blank" rel="noopener noreffer">流程图语法参考</a></p>
+<hr>
+<h4 id="12-表格">12 .表格</h4>
+<p>语法说明：</p>
+<p>不管是哪种方式，第一行为表头，第二行分隔表头和主体部分，第三行开始每一行为一个表格行。
+列于列之间用管道符|隔开。原生方式的表格每一行的两边也要有管道符。
+第二行还可以为不同的列指定对齐方向。默认为左对齐，在-右边加上:就右对齐。</p>
+<ol>
+<li>简单方式写表格：</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">学号|姓名|分数-|-|-小明|男|75小红|女|79小陆|男|92
+</code></pre></td></tr></table>
+</div>
+</div><p>2.原生方式写表格：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">|学号|姓名|分数||-|-|-||小明|男|75||小红|女|79||小陆|男|92|
+</code></pre></td></tr></table>
+</div>
+</div><p>3.为表格第二列指定方向：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">产品|价格-|-:Leanote 高级账号|60元/年Leanote 超级账号|120元/年
+</code></pre></td></tr></table>
+</div>
+</div><p>view</p>
+<ol>
+<li>简单方式写表格：</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>学号</th>
+<th>姓名</th>
+<th>分数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>小明</td>
+<td>男</td>
+<td>75</td>
+</tr>
+<tr>
+<td>小红</td>
+<td>女</td>
+<td>79</td>
+</tr>
+<tr>
+<td>小陆</td>
+<td>男</td>
+<td>92</td>
+</tr>
+</tbody>
+</table>
+<p>2.原生方式写表格：</p>
+<table>
+<thead>
+<tr>
+<th>学号</th>
+<th>姓名</th>
+<th>分数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>小明</td>
+<td>男</td>
+<td>75</td>
+</tr>
+<tr>
+<td>小红</td>
+<td>女</td>
+<td>79</td>
+</tr>
+<tr>
+<td>小陆</td>
+<td>男</td>
+<td>92</td>
+</tr>
+</tbody>
+</table>
+<p>3.为表格第二列指定方向：</p>
+<table>
+<thead>
+<tr>
+<th>产品</th>
+<th style="text-align:right">价格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leanote 高级账号</td>
+<td style="text-align:right">60元/年</td>
+</tr>
+<tr>
+<td>Leanote 超级账号</td>
+<td style="text-align:right">120元/年</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h4 id="13-分隔线">13. 分隔线</h4>
+<p>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="k">*</span> * <span class="ge">**</span>*******- - ----------------------------------------
+</code></pre></td></tr></table>
+</div>
+</div><p>显示效果都一样</p>
+<hr>
+<h4 id="14-代码">14. 代码</h4>
+<p>对于程序员来说这个功能是必不可少的，插入程序代码的方式有两种，一种是利用缩进(Tab), 另一种是利用”`”符号（一般在ESC键下方）包裹代码。</p>
+<p>语法说明：</p>
+<ol>
+<li>插入行内代码，即插入一个单词或者一句代码的情况，使用<code>code</code>这样的形式插入。</li>
+<li>插入多行代码，可以使用缩进或者“<code> code “</code>,具体看示例。</li>
+</ol>
+<p><strong>注意： 缩进式插入前方必须有空行</strong></p>
+<h5 id="141-行内式">14.1. 行内式</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">C语言里的函数 <span class="sb">`scanf()`</span> 怎么使用？
+</code></pre></td></tr></table>
+</div>
+</div><p>view
+C语言里的函数 <code>scanf()</code> 怎么使用？</p>
+<h5 id="142-缩进式多行代码">14.2. 缩进式多行代码</h5>
+<p>缩进 4 个空格或是 1 个制表符</p>
+<p>一个代码区块会一直持续到没有缩进的那一行（或是文件结尾）。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown">    <span class="ni">#include</span> <span class="p">&lt;</span><span class="nt">stdio.h</span><span class="p">&gt;</span>    int main(void)    {        printf(&#34;Hello world\n&#34;);    }
+</code></pre></td></tr></table>
+</div>
+</div><p>view</p>
+<pre><code>#include &lt;stdio.h&gt;int main(void){    printf(&quot;Hello world\n&quot;);}
+</code></pre>
+<h5 id="143-用六个包裹多行代码">14.3. 用六个`包裹多行代码</h5>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="sb">` `</span> `#include <span class="p">&lt;</span><span class="nt">stdio.h</span><span class="p">&gt;</span>int main(void){    printf(&#34;Hello world\n&#34;);}、、、
+</code></pre></td></tr></table>
+</div>
+</div><h5 id="144-html-原始码">14.4. HTML 原始码</h5>
+<p>在代码区块里面， &amp; 、 &lt; 和 &gt; 会自动转成 HTML 实体，这样的方式让你非常容易使用 Markdown 插入范例用的 HTML 原始码，只需要复制贴上，剩下的 Markdown 都会帮你处理，例如：</p>
+<p>第一个例子：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;footer&#34;</span><span class="p">&gt;</span>   © 2016 <span class="ge">**</span>*<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>view</p>
+<div class="footer">
+   © 2016 ***
+</div>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>Markdown是一种纯文本标记语言&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>HyperText Markup Language 超文本标记语言&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>开源笔记平台，支持Markdown和笔记直接发为博文&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-01-01</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/2020/markdown/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/2020/markdown/" data-title="Markdown 基本语法" data-hashtags="Markdown,HTML"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/2020/markdown/" data-hashtag="Markdown"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="/2020/markdown/" data-title="Markdown 基本语法"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/2020/markdown/" data-title="Markdown 基本语法"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="/2020/markdown/" data-title="Markdown 基本语法"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/markdown/">Markdown</a>,&nbsp;<a href="/tags/html/">HTML</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/2020/theme-documentation-basics/" class="prev" rel="prev" title="主题文档 - 基本概念"><i class="fas fa-angle-left fa-fw"></i>主题文档 - 基本概念</a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></div><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.84.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020 - 2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">CharlesCheung</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"en","pageSize":10,"placeholder":"Your comment ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"algoliaAppID":null,"algoliaIndex":null,"algoliaSearchKey":null,"highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":50,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

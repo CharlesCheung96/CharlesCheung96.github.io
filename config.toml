@@ -11,6 +11,7 @@ enableEmoji = true # 支持 Emoji
 enableRobotsTXT = true # 支持 robots.txt
 # googleAnalytics = "" # Google 统计 id
 
+ignoreErrors = ["error-missing-instagram-accesstoken"]
 preserveTaxonomyNames = true
 
 [taxonomies]
@@ -195,7 +196,7 @@ preserveTaxonomyNames = true
   enable = true
   # Custom content (HTML format is supported)
   # 自定义内容 (支持 HTML 格式)
-  custom = ''
+  custom = '<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>'
   # whether to show Hugo and theme info
   # 是否显示 Hugo 和主题信息
   hugo = true
@@ -271,7 +272,7 @@ preserveTaxonomyNames = true
     # KaTeX mathematical formulas config (KaTeX https://katex.org/)
     # KaTeX 数学公式配置 (KaTeX https://katex.org/)
     [params.page.math]
-      enable = false
+      enable = true
       # default block delimiter is $$ ... $$ and \\[ ... \\]
       # 默认块定界符是 $$ ... $$ 和 \\[ ... \\]
       blockLeftDelimiter = ""
