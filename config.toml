@@ -78,6 +78,43 @@ preserveTaxonomyNames = true
     Dribbble = "xxoo"
     Medium = "xxoo"
 
+# 应用图标配置
+[params.app]
+   # 当添加到 iOS 主屏幕或者 Android 启动器时的标题, 覆盖默认标题
+   title = "Charles' web Blog"
+   # 是否隐藏网站图标资源链接
+   noFavicon = false
+   # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
+   svgFavicon = ""
+   # Android 浏览器主题色
+   themeColor = "#ffffff"
+   # Safari 图标颜色
+   iconColor = "#5bbad5"
+   # Windows v8-10 磁贴颜色
+   tileColor = "#da532c"
+
+# 搜索配置
+[params.search]
+   enable = true
+   # 搜索引擎的类型 ("lunr", "algolia")
+   type = "algolia"
+   # 文章内容最长索引长度
+   contentLength = 4000
+   # 搜索框的占位提示语
+   placeholder = ""
+   # 最大结果数目
+   maxResultLength = 10
+   # 结果内容片段长度
+   snippetLength = 50
+   # 搜索结果中高亮部分的 HTML 标签
+   highlightTag = "em"
+   # 是否在搜索索引中使用基于 baseURL 的绝对路径
+   absoluteURL = false
+   [algolia]
+     index = "index.zh-cn"
+     appID = "PASDMWALPK"
+     searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+
 [params.gitalk] # Github: https://github.com/gitalk/gitalk
     clientID = "" # Your client ID
     clientSecret = "" # Your client secret
