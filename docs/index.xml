@@ -3,7 +3,8 @@
         <title>Charles&#39; Blog</title>
         <link>/</link>
         <description>Charles&#39; Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 24 Jun 2021 11:00:54 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>xiaoshuaizx@gmail.com (CharlesCheung)</managingEditor>
+            <webMaster>xiaoshuaizx@gmail.com (CharlesCheung)</webMaster><lastBuildDate>Thu, 24 Jun 2021 11:00:54 &#43;0800</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
     <title>Markdown 基本语法</title>
