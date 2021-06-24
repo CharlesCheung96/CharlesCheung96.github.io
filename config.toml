@@ -1,4 +1,4 @@
-L = "https://charlescheung96.github.io" # <head> 里面的 baseurl 信息，填你的博客地址
+basURL = "https://charlescheung96.github.io" # <head> 里面的 baseurl 信息，填你的博客地址
 title = "Charles' Blog" # 浏览器的标题
 languageCode = "zh-cn" # 语言
 hasCJKLanguage = true # 开启可以让「字数统计」统计汉字
@@ -161,7 +161,6 @@ preserveTaxonomyNames = true
     Bilibili = "412072655"
     RSS = true
 
-############################暂时失效############################
 # Header config
 # 页面头部导航栏配置
 [params.header]
@@ -176,16 +175,16 @@ preserveTaxonomyNames = true
   [params.header.title]
     # URL of the LOGO
     # LOGO 的 URL
-    logo = ""
+    #  logo = "http://img.yao51.com/jiankangtuku/oiffopiojz.jpeg"
     # title name
     # 标题名称
-    name = "LoveIt"
+    name = "Charles' Blog"
     # you can add extra information before the name (HTML format is supported), such as icons
     # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
-    pre = "<i class='far fa-kiss-wink-heart fa-fw'></i>"
+    # pre = "<i class='far fa-laugh-wink'></i>"
     # you can add extra information after the name (HTML format is supported), such as icons
     # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
-    post = ""
+    # post = "<i class='far fa-laugh-wink'></i>" 
     # whether to use typeit animation for title name
     # 是否为标题显示打字机动画
     typeit = false
@@ -436,15 +435,15 @@ preserveTaxonomyNames = true
         # someJavascript = "https://cdn.example.com/some.js"
     # Page SEO config
     # 页面 SEO 配置
-    [params.page.seo]
+  #  [params.page.seo]
       # image URL
       # 图片 URL
-      images = []
+  #    images = []
       # Publisher info
       # 出版者信息
-      [params.page.seo.publisher]
-        name = "xxxx"
-        logoUrl = "/images/avatar.png"
+   #   [params.page.seo.publisher]
+   #     name = "xxxx"
+    #    logoUrl = "/images/avatar.png"
 
 
   # TypeIt config
