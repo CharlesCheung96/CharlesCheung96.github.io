@@ -18,7 +18,7 @@
 <meta name="application-name" content="Charles&#39; web Blog">
 <meta name="apple-mobile-web-app-title" content="Charles&#39; web Blog"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/2020/markdown/" /><link rel="prev" href="/2020/theme-documentation-basics/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/2020/markdown/" /><link rel="prev" href="/2020/theme-documentation-basics/" /><link rel="next" href="/2021/java-%E5%9F%BA%E7%A1%80/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/2020\/markdown\/"
-        },"image": ["\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Markdown, HTML","wordcount":  5333 ,
+        },"image": ["\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Markdown, HTML","wordcount":  5334 ,
         "url": "\/2020\/markdown\/","datePublished": "2020-12-01T21:57:40+08:00","dateModified": "2021-01-01T16:45:40+08:00","publisher": {
             "@type": "Organization",
             "name": "Demi_YuHongJun"},"author": {
@@ -104,7 +104,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Markdown 基本语法</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Demi_YuHongJun</a></span>&nbsp;<span class="post-category">included in <a href="/categories/markdown/"><i class="far fa-folder fa-fw"></i>Markdown</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-12-01">2020-12-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;5333 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-12-01">2020-12-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;5334 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;11 minutes&nbsp;<span id="/2020/markdown/" class="leancloud_visitors" data-flag-title="Markdown 基本语法">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
                     </span>&nbsp;</div>
@@ -119,56 +119,60 @@
       <ul>
         <li>
           <ul>
-            <li><a href="#1-斜体和粗体">1. 斜体和粗体</a></li>
-            <li><a href="#2-分级标题">2. 分级标题</a></li>
-            <li><a href="#3-超链接">3. 超链接</a>
+            <li>
               <ul>
-                <li><a href="#31-行内式">3.1. 行内式</a></li>
-                <li><a href="#32-参考式">3.2. 参考式</a></li>
-                <li><a href="#33-自动链接">3.3. 自动链接</a></li>
-              </ul>
-            </li>
-            <li><a href="#4-锚点">4. 锚点</a></li>
-            <li><a href="#5-列表">5. 列表</a>
-              <ul>
-                <li><a href="#51-无序列表">5.1. 无序列表</a></li>
-                <li><a href="#52-有序列表">5.2. 有序列表</a></li>
-                <li><a href="#53-定义型列表">5.3. 定义型列表</a></li>
-                <li><a href="#53-列表缩进">5.3. 列表缩进</a></li>
-                <li><a href="#54-包含段落的列表">5.4. 包含段落的列表</a></li>
-                <li><a href="#55-包含引用的列表">5.5. 包含引用的列表</a></li>
-                <li><a href="#56-包含代码区块的引用">5.6. 包含代码区块的引用</a></li>
-                <li><a href="#57-一个特殊情况">5.7. 一个特殊情况</a></li>
-              </ul>
-            </li>
-            <li><a href="#6-引用">6. 引用</a>
-              <ul>
-                <li><a href="#61-引用的多层嵌套">6.1. 引用的多层嵌套</a></li>
-                <li><a href="#62-引用其它要素">6.2. 引用其它要素</a></li>
-              </ul>
-            </li>
-            <li><a href="#7-插入图像">7. 插入图像</a>
-              <ul>
-                <li><a href="#71-行内式">7.1. 行内式</a></li>
-              </ul>
-            </li>
-            <li><a href="#8-内容目录">8. 内容目录</a></li>
-            <li><a href="#9-注脚">9. 注脚</a></li>
-            <li><a href="#10-latex-公式">10. LaTeX 公式</a>
-              <ul>
-                <li><a href="#101--表示行内公式">10.1. $ 表示行内公式：</a></li>
-                <li><a href="#102--表示整行公式">10.2 $$ 表示整行公式：</a></li>
-              </ul>
-            </li>
-            <li><a href="#11-流程图">11. 流程图</a></li>
-            <li><a href="#12-表格">12 .表格</a></li>
-            <li><a href="#13-分隔线">13. 分隔线</a></li>
-            <li><a href="#14-代码">14. 代码</a>
-              <ul>
-                <li><a href="#141-行内式">14.1. 行内式</a></li>
-                <li><a href="#142-缩进式多行代码">14.2. 缩进式多行代码</a></li>
-                <li><a href="#143-用六个包裹多行代码">14.3. 用六个`包裹多行代码</a></li>
-                <li><a href="#144-html-原始码">14.4. HTML 原始码</a></li>
+                <li><a href="#1-斜体和粗体">1. 斜体和粗体</a></li>
+                <li><a href="#2-分级标题">2. 分级标题</a></li>
+                <li><a href="#3-超链接">3. 超链接</a>
+                  <ul>
+                    <li><a href="#31-行内式">3.1. 行内式</a></li>
+                    <li><a href="#32-参考式">3.2. 参考式</a></li>
+                    <li><a href="#33-自动链接">3.3. 自动链接</a></li>
+                  </ul>
+                </li>
+                <li><a href="#4-锚点">4. 锚点</a></li>
+                <li><a href="#5-列表">5. 列表</a>
+                  <ul>
+                    <li><a href="#51-无序列表">5.1. 无序列表</a></li>
+                    <li><a href="#52-有序列表">5.2. 有序列表</a></li>
+                    <li><a href="#53-定义型列表">5.3. 定义型列表</a></li>
+                    <li><a href="#53-列表缩进">5.3. 列表缩进</a></li>
+                    <li><a href="#54-包含段落的列表">5.4. 包含段落的列表</a></li>
+                    <li><a href="#55-包含引用的列表">5.5. 包含引用的列表</a></li>
+                    <li><a href="#56-包含代码区块的引用">5.6. 包含代码区块的引用</a></li>
+                    <li><a href="#57-一个特殊情况">5.7. 一个特殊情况</a></li>
+                  </ul>
+                </li>
+                <li><a href="#6-引用">6. 引用</a>
+                  <ul>
+                    <li><a href="#61-引用的多层嵌套">6.1. 引用的多层嵌套</a></li>
+                    <li><a href="#62-引用其它要素">6.2. 引用其它要素</a></li>
+                  </ul>
+                </li>
+                <li><a href="#7-插入图像">7. 插入图像</a>
+                  <ul>
+                    <li><a href="#71-行内式">7.1. 行内式</a></li>
+                  </ul>
+                </li>
+                <li><a href="#8-内容目录">8. 内容目录</a></li>
+                <li><a href="#9-注脚">9. 注脚</a></li>
+                <li><a href="#10-latex-公式">10. LaTeX 公式</a>
+                  <ul>
+                    <li><a href="#101--表示行内公式">10.1. $ 表示行内公式：</a></li>
+                    <li><a href="#102--表示整行公式">10.2 $$ 表示整行公式：</a></li>
+                  </ul>
+                </li>
+                <li><a href="#11-流程图">11. 流程图</a></li>
+                <li><a href="#12-表格">12 .表格</a></li>
+                <li><a href="#13-分隔线">13. 分隔线</a></li>
+                <li><a href="#14-代码">14. 代码</a>
+                  <ul>
+                    <li><a href="#141-行内式">14.1. 行内式</a></li>
+                    <li><a href="#142-缩进式多行代码">14.2. 缩进式多行代码</a></li>
+                    <li><a href="#143-用六个包裹多行代码">14.3. 用六个`包裹多行代码</a></li>
+                    <li><a href="#144-html-原始码">14.4. HTML 原始码</a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
           </ul>
@@ -197,7 +201,9 @@
 ~~删除线~~
 </code></pre></td></tr></table>
 </div>
-</div><p>view</p>
+</div><blockquote>
+<p>view</p>
+</blockquote>
 <p><em>斜体</em>或_斜体_</p>
 <p><strong>粗体</strong></p>
 <p><em><strong>加粗斜体</strong></em></p>
@@ -241,7 +247,9 @@
 欢迎来到[Demi的随笔和技术空间](https://yuhongjun.github.io/ &#34;Demi的随笔和技术空间&#34;)
 </code></pre></td></tr></table>
 </div>
-</div><p>view</p>
+</div><blockquote>
+<p>view</p>
+</blockquote>
 <p>欢迎来到<a href="https://yuhongjun.github.io/" target="_blank" rel="noopener noreffer">Demi的随笔和技术空间</a></p>
 <p>欢迎来到<a href="https://yuhongjun.github.io/" title="Demi的随笔和技术空间" target="_blank" rel="noopener noreffer">Demi的随笔和技术空间</a></p>
 <h5 id="32-参考式">3.2. 参考式</h5>
@@ -266,7 +274,10 @@
 [Demi的随笔和技术空间]:https://yuhongjun.github.io/
 </code></pre></td></tr></table>
 </div>
-</div><p>我经常去的几个网站<a href="http://www.google.com" target="_blank" rel="noopener noreffer">Google</a>,<a href="https://yuhongjun.github.io/" title="Demi的随笔和技术空间" target="_blank" rel="noopener noreffer">Demi的随笔和技术空间</a>,<a href="https://yuhongjun.github.io/" target="_blank" rel="noopener noreffer">Demi的随笔和技术空间</a>。</p>
+</div><blockquote>
+<p>view</p>
+</blockquote>
+<p>我经常去的几个网站<a href="http://www.google.com" target="_blank" rel="noopener noreffer">Google</a>,<a href="https://yuhongjun.github.io/" title="Demi的随笔和技术空间" target="_blank" rel="noopener noreffer">Demi的随笔和技术空间</a>,<a href="https://yuhongjun.github.io/" target="_blank" rel="noopener noreffer">Demi的随笔和技术空间</a>。</p>
 <h5 id="33-自动链接">3.3. 自动链接</h5>
 <p>语法说明：
 Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用&lt;&gt;包起来， Markdown 就会自动把它转成链接。一般网址的链接文字就和链接地址一样，例如：</p>
@@ -280,7 +291,9 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
 <span class="p">&lt;</span><span class="nt">address</span><span class="err">@</span><span class="na">example</span><span class="err">.</span><span class="na">com</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>view</p>
+</div><blockquote>
+<p>view</p>
+</blockquote>
 <p><a href="http://example.com/">http://example.com/</a>
 <a href="mailto:address@example.com">address@example.com</a></p>
 <hr>
@@ -319,7 +332,9 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
 <span class="k">-</span> 无序列表项 三
 </code></pre></td></tr></table>
 </div>
-</div><p>view</p>
+</div><blockquote>
+<p>view</p>
+</blockquote>
 <ul>
 <li>无序列表项 一</li>
 <li>无序列表项 二</li>
@@ -339,7 +354,9 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
 <span class="k">3.</span> 有序列表项 三
 </code></pre></td></tr></table>
 </div>
-</div><p>view</p>
+</div><blockquote>
+<p>view</p>
+</blockquote>
 <ol>
 <li>有序列表项 一</li>
 <li>有序列表项 二</li>
@@ -356,7 +373,9 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
 <pre class="chroma"><code class="language-markdown" data-lang="markdown">代码块 1 Markdown:    轻量级文本标记语言，可以转换成html，pdf等格式（左侧有一个可见的冒号和四个不可见的空格）代码块 2:   这是代码块的定义（左侧有一个可见的冒号和四个不可见的空格）        代码块（左侧有八个不可见的空格）
 </code></pre></td></tr></table>
 </div>
-</div><p>view</p>
+</div><blockquote>
+<p>view</p>
+</blockquote>
 <dl>
 <dt>代码块 1 Markdown</dt>
 <dd>轻量级文本标记语言，可以转换成html，pdf等格式（左侧有一个可见的冒号和四个不可见的空格）</dd>
@@ -377,7 +396,9 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
 <pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="k">*</span>   轻轻的我走了， 正如我轻轻的来； 我轻轻的招手， 作别西天的云彩。那河畔的金柳， 是夕阳中的新娘； 波光里的艳影， 在我的心头荡漾。 软泥上的青荇， 油油的在水底招摇； 在康河的柔波里， 我甘心做一条水草！ *   那榆荫下的一潭， 不是清泉， 是天上虹； 揉碎在浮藻间， 沉淀着彩虹似的梦。 寻梦？撑一支长篙， 向青草更青处漫溯； 满载一船星辉， 在星辉斑斓里放歌。 但我不能放歌， 悄悄是别离的笙箫； 夏虫也为我沉默， 沉默是今晚的康桥！ 悄悄的我走了， 正如我悄悄的来； 我挥一挥衣袖， 不带走一片云彩。
 </code></pre></td></tr></table>
 </div>
-</div><p>view</p>
+</div><blockquote>
+<p>view</p>
+</blockquote>
 <ul>
 <li>轻轻的我走了， 正如我轻轻的来； 我轻轻的招手， 作别西天的云彩。
 那河畔的金柳， 是夕阳中的新娘； 波光里的艳影， 在我的心头荡漾。
@@ -398,7 +419,9 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
 <pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="k">*</span>   轻轻的我走了， 正如我轻轻的来； 我轻轻的招手， 作别西天的云彩。那河畔的金柳， 是夕阳中的新娘； 波光里的艳影， 在我的心头荡漾。 软泥上的青荇， 油油的在水底招摇； 在康河的柔波里， 我甘心做一条水草！     那榆荫下的一潭， 不是清泉， 是天上虹； 揉碎在浮藻间， 沉淀着彩虹似的梦。 寻梦？撑一支长篙， 向青草更青处漫溯； 满载一船星辉， 在星辉斑斓里放歌。 但我不能放歌， 悄悄是别离的笙箫； 夏虫也为我沉默， 沉默是今晚的康桥！*    悄悄的我走了， 正如我悄悄的来； 我挥一挥衣袖， 不带走一片云彩。
 </code></pre></td></tr></table>
 </div>
-</div><p>view</p>
+</div><blockquote>
+<p>view</p>
+</blockquote>
 <ul>
 <li>
 <p>轻轻的我走了， 正如我轻轻的来； 我轻轻的招手， 作别西天的云彩。
@@ -423,7 +446,9 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
 <pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="k">*</span>   阅读的方法:    &gt; 打开书本。    &gt; 打开电灯。
 </code></pre></td></tr></table>
 </div>
-</div><p>view</p>
+</div><blockquote>
+<p>view</p>
+</blockquote>
 <ul>
 <li>
 <p>阅读的方法:</p>
@@ -473,7 +498,9 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
 <pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="k">&gt; </span><span class="ge">这是一个有两段文字的引用,无意义的占行文字1.无意义的占行文字2.&gt; 无意义的占行文字3.无意义的占行文字4.
 </span></code></pre></td></tr></table>
 </div>
-</div><p>view</p>
+</div><blockquote>
+<p>view</p>
+</blockquote>
 <blockquote>
 <p>这是一个有两段文字的引用,
 无意义的占行文字1.
@@ -550,7 +577,8 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
 <pre class="chroma"><code class="language-markdown" data-lang="markdown">美丽风景： ![<span class="nt">美丽风景</span>](<span class="na">https://yuhongjun.github.io/assets/media/scenery.jpeg &#34;美丽风景&#34;</span>)
 </code></pre></td></tr></table>
 </div>
-</div><p>view
+</div><blockquote>
+<p>view
 美丽风景：
 <figure><a class="lightgallery" href="https://yuhongjun.github.io/assets/media/scenery.jpeg" title="美丽风景" data-thumbnail="https://yuhongjun.github.io/assets/media/scenery.jpeg" data-sub-html="<h2>美丽风景</h2><p>美丽风景</p>">
         <img
@@ -562,6 +590,7 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
             alt="https://yuhongjun.github.io/assets/media/scenery.jpeg" />
     </a><figcaption class="image-caption">美丽风景</figcaption>
     </figure></p>
+</blockquote>
 <p>7.2. 参考式</p>
 <p>语法说明：</p>
 <p>在文档要插入图片的地方写![图片Alt][标记]</p>
@@ -574,7 +603,8 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
 <pre class="chroma"><code class="language-markdown" data-lang="markdown">![<span class="nt">美丽风景</span>](<span class="na">https://yuhongjun.github.io/assets/media/scenery.jpeg &#34;美丽风景&#34;</span>)[scenery]:https://yuhongjun.github.io/assets/media/scenery.jpeg &#34;美丽风景&#34;
 </code></pre></td></tr></table>
 </div>
-</div><p>view
+</div><blockquote>
+<p>view
 <figure><a class="lightgallery" href="https://yuhongjun.github.io/assets/media/scenery.jpeg" title="美丽风景" data-thumbnail="https://yuhongjun.github.io/assets/media/scenery.jpeg" data-sub-html="<h2>美丽风景</h2><p>美丽风景</p>">
         <img
             class="lazyload"
@@ -585,6 +615,7 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
             alt="https://yuhongjun.github.io/assets/media/scenery.jpeg" />
     </a><figcaption class="image-caption">美丽风景</figcaption>
     </figure></p>
+</blockquote>
 <hr>
 <h4 id="8-内容目录">8. 内容目录</h4>
 <p>在段落中填写 [TOC] 以显示全文内容的目录结构。</p>
@@ -602,7 +633,9 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
 <pre class="chroma"><code class="language-markdown" data-lang="markdown">使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Leanote[^Le] 编辑器进行书写。[^1]:Markdown是一种纯文本标记语言[^2]:HyperText Markup Language 超文本标记语言[^Le]:开源笔记平台，支持Markdown和笔记直接发为博文
 </code></pre></td></tr></table>
 </div>
-</div><p>view</p>
+</div><blockquote>
+<p>view</p>
+</blockquote>
 <p>使用 Markdown<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>可以效率的书写文档, 直接转换成 HTML<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>, 你可以使用 Leanote<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> 编辑器进行书写。</p>
 <p>注：脚注自动被搬运到最后面，请到文章末尾查看，并且脚注后方的链接可以直接跳转回到加注的地方。</p>
 <hr>
@@ -616,8 +649,10 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
 <pre class="chroma"><code class="language-markdown" data-lang="markdown">质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。
 </code></pre></td></tr></table>
 </div>
-</div><p>view
+</div><blockquote>
+<p>view
 质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。</p>
+</blockquote>
 <h5 id="102--表示整行公式">10.2 $$ 表示整行公式：</h5>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -731,7 +766,9 @@ c2(no)->op2->e
 <pre class="chroma"><code class="language-markdown" data-lang="markdown">产品|价格-|-:Leanote 高级账号|60元/年Leanote 超级账号|120元/年
 </code></pre></td></tr></table>
 </div>
-</div><p>view</p>
+</div><blockquote>
+<p>view</p>
+</blockquote>
 <ol>
 <li>简单方式写表格：</li>
 </ol>
@@ -837,8 +874,10 @@ c2(no)->op2->e
 <pre class="chroma"><code class="language-markdown" data-lang="markdown">C语言里的函数 <span class="sb">`scanf()`</span> 怎么使用？
 </code></pre></td></tr></table>
 </div>
-</div><p>view
+</div><blockquote>
+<p>view
 C语言里的函数 <code>scanf()</code> 怎么使用？</p>
+</blockquote>
 <h5 id="142-缩进式多行代码">14.2. 缩进式多行代码</h5>
 <p>缩进 4 个空格或是 1 个制表符</p>
 <p>一个代码区块会一直持续到没有缩进的那一行（或是文件结尾）。</p>
@@ -850,7 +889,9 @@ C语言里的函数 <code>scanf()</code> 怎么使用？</p>
 <pre class="chroma"><code class="language-markdown" data-lang="markdown">    <span class="ni">#include</span> <span class="p">&lt;</span><span class="nt">stdio.h</span><span class="p">&gt;</span>    int main(void)    {        printf(&#34;Hello world\n&#34;);    }
 </code></pre></td></tr></table>
 </div>
-</div><p>view</p>
+</div><blockquote>
+<p>view</p>
+</blockquote>
 <pre><code>#include &lt;stdio.h&gt;int main(void){    printf(&quot;Hello world\n&quot;);}
 </code></pre>
 <h5 id="143-用六个包裹多行代码">14.3. 用六个`包裹多行代码</h5>
@@ -873,7 +914,9 @@ C语言里的函数 <code>scanf()</code> 怎么使用？</p>
 <pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;footer&#34;</span><span class="p">&gt;</span>   © 2016 <span class="ge">**</span>*<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>view</p>
+</div><blockquote>
+<p>view</p>
+</blockquote>
 <div class="footer">
    © 2016 ***
 </div>
@@ -916,7 +959,8 @@ C语言里的函数 <code>scanf()</code> 怎么使用？</p>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/2020/theme-documentation-basics/" class="prev" rel="prev" title="主题文档 - 基本概念"><i class="fas fa-angle-left fa-fw"></i>主题文档 - 基本概念</a></div>
+    <div class="post-nav"><a href="/2020/theme-documentation-basics/" class="prev" rel="prev" title="主题文档 - 基本概念"><i class="fas fa-angle-left fa-fw"></i>主题文档 - 基本概念</a>
+            <a href="/2021/java-%E5%9F%BA%E7%A1%80/" class="next" rel="next" title="Java 基础">Java 基础<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.

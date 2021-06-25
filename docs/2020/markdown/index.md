@@ -1,10 +1,7 @@
 # Markdown 基本语法
 
-
 * 目录
 {:toc}
-
-
 ---
 
 #### 1. 斜体和粗体
@@ -16,7 +13,7 @@
 ~~删除线~~
 ```
 
-view
+> view
 
 *斜体*或_斜体_
 
@@ -59,7 +56,7 @@ Markdown 支持两种形式的链接语法： 行内式和参考式两种形式�
 欢迎来到[Demi的随笔和技术空间](https://yuhongjun.github.io/ "Demi的随笔和技术空间")
 ```
 
-view
+> view
 
 欢迎来到[Demi的随笔和技术空间](https://yuhongjun.github.io/)
 
@@ -83,6 +80,8 @@ view
 [Demi的随笔和技术空间]:https://yuhongjun.github.io/
 ```
 
+> view
+
 我经常去的几个网站[Google][1],[Demi的随笔和技术空间][2],[Demi的随笔和技术空间][]。
 
 [1]:http://www.google.com
@@ -99,7 +98,7 @@ Markdown 支持以比较简短的自动链接形式来处理网址和电子邮�
 <address@example.com>
 ```
 
-view
+> view
 
 <http://example.com/>
 <address@example.com>
@@ -135,7 +134,7 @@ view
 - 无序列表项 三
 ```
 
-view
+> view
 
 - 无序列表项 一
 - 无序列表项 二
@@ -151,7 +150,7 @@ view
 3. 有序列表项 三
 ```
 
-view
+> view
 
 1. 有序列表项 一
 2. 有序列表项 二
@@ -167,7 +166,7 @@ view
 代码块 1 Markdown:    轻量级文本标记语言，可以转换成html，pdf等格式（左侧有一个可见的冒号和四个不可见的空格）代码块 2:   这是代码块的定义（左侧有一个可见的冒号和四个不可见的空格）        代码块（左侧有八个不可见的空格）
 ```
 
-view
+> view
 
 代码块 1 Markdown
 :    轻量级文本标记语言，可以转换成html，pdf等格式（左侧有一个可见的冒号和四个不可见的空格）
@@ -187,7 +186,7 @@ view
 *   轻轻的我走了， 正如我轻轻的来； 我轻轻的招手， 作别西天的云彩。那河畔的金柳， 是夕阳中的新娘； 波光里的艳影， 在我的心头荡漾。 软泥上的青荇， 油油的在水底招摇； 在康河的柔波里， 我甘心做一条水草！ *   那榆荫下的一潭， 不是清泉， 是天上虹； 揉碎在浮藻间， 沉淀着彩虹似的梦。 寻梦？撑一支长篙， 向青草更青处漫溯； 满载一船星辉， 在星辉斑斓里放歌。 但我不能放歌， 悄悄是别离的笙箫； 夏虫也为我沉默， 沉默是今晚的康桥！ 悄悄的我走了， 正如我悄悄的来； 我挥一挥衣袖， 不带走一片云彩。
 ```
 
-view
+> view
 
 *   轻轻的我走了， 正如我轻轻的来； 我轻轻的招手， 作别西天的云彩。
 	那河畔的金柳， 是夕阳中的新娘； 波光里的艳影， 在我的心头荡漾。 
@@ -207,7 +206,7 @@ view
 *   轻轻的我走了， 正如我轻轻的来； 我轻轻的招手， 作别西天的云彩。那河畔的金柳， 是夕阳中的新娘； 波光里的艳影， 在我的心头荡漾。 软泥上的青荇， 油油的在水底招摇； 在康河的柔波里， 我甘心做一条水草！     那榆荫下的一潭， 不是清泉， 是天上虹； 揉碎在浮藻间， 沉淀着彩虹似的梦。 寻梦？撑一支长篙， 向青草更青处漫溯； 满载一船星辉， 在星辉斑斓里放歌。 但我不能放歌， 悄悄是别离的笙箫； 夏虫也为我沉默， 沉默是今晚的康桥！*    悄悄的我走了， 正如我悄悄的来； 我挥一挥衣袖， 不带走一片云彩。
 ```
 
-view
+> view
 
 *   轻轻的我走了， 正如我轻轻的来； 我轻轻的招手， 作别西天的云彩。
 	那河畔的金柳， 是夕阳中的新娘； 波光里的艳影， 在我的心头荡漾。 
@@ -229,7 +228,7 @@ view
 *   阅读的方法:    > 打开书本。    > 打开电灯。
 ```
 
-view
+> view
 
 *   阅读的方法:
 
@@ -275,7 +274,7 @@ view
 > 这是一个有两段文字的引用,无意义的占行文字1.无意义的占行文字2.> 无意义的占行文字3.无意义的占行文字4.
 ```
 
-view
+> view
 
 > 这是一个有两段文字的引用,
 > 无意义的占行文字1.
@@ -329,7 +328,7 @@ view
 美丽风景： ![美丽风景](https://yuhongjun.github.io/assets/media/scenery.jpeg "美丽风景")
 ```
 
-view
+> view
 美丽风景： 
 ![美丽风景](https://yuhongjun.github.io/assets/media/scenery.jpeg "美丽风景")
 
@@ -345,7 +344,7 @@ view
 ![美丽风景](https://yuhongjun.github.io/assets/media/scenery.jpeg "美丽风景")[scenery]:https://yuhongjun.github.io/assets/media/scenery.jpeg "美丽风景"
 ```
 
-view
+> view
 ![美丽风景](https://yuhongjun.github.io/assets/media/scenery.jpeg "美丽风景")
 
 [scenery]:https://yuhongjun.github.io/assets/media/scenery.jpeg "美丽风景"
@@ -372,7 +371,7 @@ view
 使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Leanote[^Le] 编辑器进行书写。[^1]:Markdown是一种纯文本标记语言[^2]:HyperText Markup Language 超文本标记语言[^Le]:开源笔记平台，支持Markdown和笔记直接发为博文
 ```
 
-view
+> view
 
 使用 Markdown[^1]可以效率的书写文档, 直接转换成 HTML[^2], 你可以使用 Leanote[^Le] 编辑器进行书写。
 
@@ -394,7 +393,7 @@ view
 质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。
 ```
 
-view
+> view
 质能守恒方程可以用一个很简洁的方程式 $E=mc^2$ 来表达。
 
 ##### 10.2 $$ 表示整行公式：
@@ -497,7 +496,7 @@ c2(no)->op2->e
 产品|价格-|-:Leanote 高级账号|60元/年Leanote 超级账号|120元/年
 ```
 
-view
+> view
 
 1. 简单方式写表格：
 
@@ -553,7 +552,7 @@ view
 C语言里的函数 `scanf()` 怎么使用？
 ```
 
-view
+> view
 C语言里的函数 `scanf()` 怎么使用？
 
 ##### 14.2. 缩进式多行代码
@@ -566,7 +565,7 @@ C语言里的函数 `scanf()` 怎么使用？
     #include <stdio.h>    int main(void)    {        printf("Hello world\n");    }
 ```
 
-view
+> view
 
     #include <stdio.h>int main(void){    printf("Hello world\n");}
 
@@ -586,7 +585,7 @@ view
 <div class="footer">   © 2016 ***</div>
 ```
 
-view
+> view
 
 <div class="footer">
    © 2016 ***
