@@ -60,6 +60,7 @@ preserveTaxonomyNames = true
 
 [params]
     # LoveIt 主题版本
+    toc = true
     version = "0.2.X"
     since = 2021
     author = "charles"                          # Author's name

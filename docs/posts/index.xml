@@ -66,6 +66,6 @@
     <pubDate>Thu, 24 Jun 2021 11:00:54 &#43;0800</pubDate>
     <author>Author</author>
     <guid>/2021/first_post/</guid>
-    <description><![CDATA[First Posts ]]></description>
+    <description><![CDATA[First Posts 1. 嵌入YouTube视频 2. 嵌入Bilibili视频 3. 流程图支持 sequenceDiagram participant Alices participant Bob Alice-John: Hello John, how are you? loop Healthcheck John-John: Fight against hypochondria end Note right of John: Rational thoughts prevail... John--Alice: Great! John-Bob: How about you? Bodb--John: Jolly good!]]></description>
 </item></channel>
 </rss>

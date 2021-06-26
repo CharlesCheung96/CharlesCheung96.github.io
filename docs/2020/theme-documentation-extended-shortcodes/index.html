@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/2020\/theme-documentation-extended-shortcodes\/"
-        },"image": ["\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "shortcodes","wordcount":  5571 ,
+        },"image": ["\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "shortcodes","wordcount":  5792 ,
         "url": "\/2020\/theme-documentation-extended-shortcodes\/","datePublished": "2020-03-03T16:29:59+08:00","dateModified": "2020-03-03T16:29:59+08:00","publisher": {
             "@type": "Organization",
             "name": "Dillon"},"author": {
@@ -61,6 +61,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js"></script>
 </header><header class="mobile" id="header-mobile">
     <div class="header-container">
         <div class="header-wrapper">
@@ -91,6 +92,7 @@
                 <i class="fas fa-adjust fa-fw"></i>
             </a></div>
     </div>
+<script src="https://cdn.bootcss.com/mermaid/8.0.0-rc.8/mermaid.min.js"></script>
 </header>
 <div class="search-dropdown desktop">
     <div id="search-dropdown-desktop"></div>
@@ -104,7 +106,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">主题文档 - 扩展 Shortcodes</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="https://dillonzq.com" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>Dillon</a></span>&nbsp;<span class="post-category">included in <a href="/categories/documentation/"><i class="far fa-folder fa-fw"></i>documentation</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-03-03">2020-03-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;5571 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2020-03-03">2020-03-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;5792 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;12 minutes&nbsp;<span id="/2020/theme-documentation-extended-shortcodes/" class="leancloud_visitors" data-flag-title="主题文档 - 扩展 Shortcodes">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
                     </span>&nbsp;</div>
@@ -550,7 +552,18 @@ graph LR;
 </code></pre></td></tr></table>
 </div>
 </div><p>呈现的输出效果如下:</p>
-<div class="mermaid" id="id-2"></div>
+
+<div class="mermaid" align=" 
+                                center
+                            "> 
+    
+graph LR;
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
+
+</div>
 <h3 id="sequence-diagram">5.2 时序图</h3>
 <p>一个 <strong>时序图</strong> <code>mermaid</code> 示例:</p>
 <div class="highlight"><div class="chroma">
@@ -586,7 +599,24 @@ sequenceDiagram
 </code></pre></td></tr></table>
 </div>
 </div><p>呈现的输出效果如下:</p>
-<div class="mermaid" id="id-3"></div>
+
+<div class="mermaid" align=" 
+                                center
+                            "> 
+    
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail...
+    John-->Alice: Great!
+    John->Bob: How about you?
+    Bob-->John: Jolly good!
+
+</div>
 <h3 id="gantt">5.3 甘特图</h3>
 <p>一个 <strong>甘特图</strong> <code>mermaid</code> 示例:</p>
 <div class="highlight"><div class="chroma">
@@ -630,7 +660,28 @@ gantt
 </code></pre></td></tr></table>
 </div>
 </div><p>呈现的输出效果如下:</p>
-<div class="mermaid" id="id-4"></div>
+
+<div class="mermaid" align=" 
+                                center
+                            "> 
+    
+gantt
+    dateFormat  YYYY-MM-DD
+    title Adding GANTT diagram functionality to mermaid
+    section A section
+    Completed task            :done,    des1, 2014-01-06,2014-01-08
+    Active task               :active,  des2, 2014-01-09, 3d
+    Future task               :         des3, after des2, 5d
+    Future task2               :         des4, after des3, 5d
+    section Critical tasks
+    Completed task in the critical line :crit, done, 2014-01-06,24h
+    Implement parser and jison          :crit, done, after des1, 2d
+    Create tests for parser             :crit, active, 3d
+    Future task in critical line        :crit, 5d
+    Create tests for renderer           :2d
+    Add to mermaid                      :1d
+
+</div>
 <h3 id="class-diagram">5.4 类图</h3>
 <p>一个 <strong>类图</strong> <code>mermaid</code> 示例:</p>
 <div class="highlight"><div class="chroma">
@@ -672,7 +723,27 @@ classDiagram
 </code></pre></td></tr></table>
 </div>
 </div><p>呈现的输出效果如下:</p>
-<div class="mermaid" id="id-5"></div>
+
+<div class="mermaid" align=" 
+                                center
+                            "> 
+    
+classDiagram
+    Class01 <|-- AveryLongClass : Cool
+    Class03 *-- Class04
+    Class05 o-- Class06
+    Class07 .. Class08
+    Class09 --> C2 : Where am i?
+    Class09 --* C3
+    Class09 --|> Class07
+    Class07 : equals()
+    Class07 : Object[] elementData
+    Class01 : size()
+    Class01 : int chimp
+    Class01 : int gorilla
+    Class08 <--> C2: Cool label
+
+</div>
 <h3 id="state-diagram">5.5 状态图</h3>
 <p>一个 <strong>状态图</strong> <code>mermaid</code> 示例:</p>
 <div class="highlight"><div class="chroma">
@@ -700,7 +771,20 @@ stateDiagram
 </code></pre></td></tr></table>
 </div>
 </div><p>呈现的输出效果如下:</p>
-<div class="mermaid" id="id-6"></div>
+
+<div class="mermaid" align=" 
+                                center
+                            "> 
+    
+stateDiagram
+    [*] --> Still
+    Still --> [*]
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
+
+</div>
 <h3 id="git-graph">5.6 Git 图</h3>
 <p>一个 <strong>Git 图</strong> <code>mermaid</code> 示例:</p>
 <div class="highlight"><div class="chroma">
@@ -746,7 +830,29 @@ end
 </code></pre></td></tr></table>
 </div>
 </div><p>呈现的输出效果如下:</p>
-<div class="mermaid" id="id-7"></div>
+
+<div class="mermaid" align=" 
+                                center
+                            "> 
+    
+gitGraph:
+options
+{
+    "nodeSpacing": 100,
+    "nodeRadius": 10
+}
+end
+    commit
+    branch newbranch
+    checkout newbranch
+    commit
+    commit
+    checkout master
+    commit
+    commit
+    merge newbranch
+
+</div>
 <h3 id="pie">5.7 饼图</h3>
 <p>一个 <strong>饼图</strong> <code>mermaid</code> 示例:</p>
 <div class="highlight"><div class="chroma">
@@ -768,7 +874,17 @@ pie
 </code></pre></td></tr></table>
 </div>
 </div><p>呈现的输出效果如下:</p>
-<div class="mermaid" id="id-8"></div>
+
+<div class="mermaid" align=" 
+                                center
+                            "> 
+    
+pie
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 15
+
+</div>
 <h2 id="6-echarts">6 echarts</h2>
 <p><a href="https://echarts.apache.org/" target="_blank" rel="noopener noreffer">ECharts</a> 是一个帮助你生成交互式数据可视化的库.</p>
 <p>ECharts 提供了常规的 <a href="https://echarts.apache.org/zh/option.html#series-line" target="_blank" rel="noopener noreffer">折线图</a>, <a href="https://echarts.apache.org/zh/option.html#series-line" target="_blank" rel="noopener noreffer">柱状图</a>, <a href="https://echarts.apache.org/zh/option.html#series-scatter" target="_blank" rel="noopener noreffer">散点图</a>, <a href="https://echarts.apache.org/zh/option.html#series-pie" target="_blank" rel="noopener noreffer">饼图</a>, <a href="https://echarts.apache.org/zh/option.html#series-candlestick" target="_blank" rel="noopener noreffer">K线图</a>, 用于统计的 <a href="https://echarts.apache.org/zh/option.html#series-boxplot" target="_blank" rel="noopener noreffer">盒形图</a>, 用于地理数据可视化的 <a href="https://echarts.apache.org/zh/option.html#series-map" target="_blank" rel="noopener noreffer">地图</a>, <a href="https://echarts.apache.org/zh/option.html#series-heatmap" target="_blank" rel="noopener noreffer">热力图</a>, <a href="https://echarts.apache.org/zh/option.html#series-lines" target="_blank" rel="noopener noreffer">线图</a>, 用于关系数据可视化的 <a href="https://echarts.apache.org/zh/option.html#series-graph" target="_blank" rel="noopener noreffer">关系图</a>, <a href="https://echarts.apache.org/zh/option.html#series-treemap" target="_blank" rel="noopener noreffer">treemap</a>, <a href="https://echarts.apache.org/zh/option.html#series-sunburst" target="_blank" rel="noopener noreffer">旭日图</a>, 多维数据可视化的 <a href="https://echarts.apache.org/zh/option.html#series-parallel" target="_blank" rel="noopener noreffer">平行坐标</a>, 还有用于 BI 的 <a href="https://echarts.apache.org/zh/option.html#series-funnel" target="_blank" rel="noopener noreffer">漏斗图</a>, <a href="https://echarts.apache.org/zh/option.html#series-gauge" target="_blank" rel="noopener noreffer">仪表盘</a>, 并且支持图与图之间的混搭.</p>
@@ -1663,7 +1779,7 @@ pie
 </code></pre></td></tr></table>
 </div>
 </div><p>呈现的输出效果如下:</p>
-<div class="bilibili"><iframe src="//player.bilibili.com/player.html?bvid=BV1Sx411T7QQ&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe></div>
+<div class="bilibili"><iframe src="//player.bilibili.com/player.html?bvid=BV1Sx411T7QQ&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe></div>
 
 <p>如果视频包含多个部分, 则除了视频的 BV <code>id</code> 之外, 还需要 <code>p</code>, 默认值为 <code>1</code>, 例如:</p>
 <div class="highlight"><div class="chroma">
@@ -1688,7 +1804,7 @@ pie
 </code></pre></td></tr></table>
 </div>
 </div><p>呈现的输出效果如下:</p>
-<div class="bilibili"><iframe src="//player.bilibili.com/player.html?bvid=BV1TJ411C7An&page=3" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe></div>
+<div class="bilibili"><iframe src="//player.bilibili.com/player.html?bvid=BV1TJ411C7An&page=3&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe></div>
 
 <h2 id="10-typeit">10 typeit</h2>
 <p><code>typeit</code> shortcode 基于 <a href="https://typeitjs.com/" target="_blank" rel="noopener noreffer">TypeIt</a> 提供了打字动画.</p>
