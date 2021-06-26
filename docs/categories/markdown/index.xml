@@ -10,7 +10,7 @@
     <pubDate>Tue, 01 Dec 2020 21:57:40 &#43;0800</pubDate>
     <author>Author</author>
     <guid>/2020/markdown/</guid>
-    <description><![CDATA[目录 {:toc} 1. 斜体和粗体 1 2 3 4 *斜体*或_斜体_ **粗体** ***加粗斜体*** ~~删除线~~ view 斜体或_斜体_ 粗体 加粗斜体 删除线 2. 分级标题 1 2 3]]></description>
+    <description><![CDATA[这篇文章展示了基本的 Markdown 语法和格式.]]></description>
 </item><item>
     <title>Hugo Markdown 基本语法</title>
     <link>/2020/markdown-basic/</link>

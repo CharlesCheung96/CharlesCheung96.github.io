@@ -6,6 +6,7 @@ lastmod: 2021-06-25T14:37:48+08:00
 draft: false
 author: "Charles"
 description: "这篇文章总结了 Java 基础知识."
+summary: "这篇文章总结了 Java 基础知识."
 tags: ["Java", "编程语言"]
 categories: ["Java"]
 lightgallery: true

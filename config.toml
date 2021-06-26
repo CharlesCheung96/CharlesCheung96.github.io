@@ -196,7 +196,7 @@ preserveTaxonomyNames = true
   enable = true
   # Custom content (HTML format is supported)
   # 自定义内容 (支持 HTML 格式)
-  custom = '<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>'
+  custom = '<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次  </span><span id="busuanzi_container_site_uv">您是访问本站的第<span id="busuanzi_value_site_uv"></span>个小伙伴  </span><span id="busuanzi_container_page_pv">本文总阅读量<span id="busuanzi_value_page_pv"></span>次</span>'
   # whether to show Hugo and theme info
   # 是否显示 Hugo 和主题信息
   hugo = true

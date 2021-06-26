@@ -10,6 +10,6 @@
     <pubDate>Fri, 25 Jun 2021 14:37:48 &#43;0800</pubDate>
     <author>Author</author>
     <guid>/2021/java-basic/</guid>
-    <description><![CDATA[[TOC] 一、数据类型 基本类型 基本类型 大小 最小值 最大值 默认值 包装器类型 boolean - - - false Boolean byte 8 -128 127 (byte)0 Byte char 16 Unicode 0 Unicode 65535 \u0000 Character short 16 -32768 32767 (short)0 Short int 32 -231 231-1 0 Integer、]]></description>
+    <description><![CDATA[这篇文章总结了 Java 基础知识.]]></description>
 </item></channel>
 </rss>
