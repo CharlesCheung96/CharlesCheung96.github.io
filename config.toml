@@ -161,7 +161,7 @@ preserveTaxonomyNames = true
     Wechat = "/images/wechat.png"  # Wechat QRcode image
     Zhihu = "charlescheung96"
     Bilibili = "412072655"
-    RSS = true
+    RSS = false
 
 # Header config
 # 页面头部导航栏配置
