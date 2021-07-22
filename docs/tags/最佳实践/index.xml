@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>最佳实践 - Tag - Charles&#39; Blog</title>
+        <link>/tags/%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/</link>
+        <description>最佳实践 - Tag - Charles&#39; Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>xiaoshuaizx@gmail.com (CharlesCheung)</managingEditor>
+            <webMaster>xiaoshuaizx@gmail.com (CharlesCheung)</webMaster><lastBuildDate>Thu, 22 Jul 2021 14:37:48 &#43;0800</lastBuildDate><atom:link href="/tags/%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/" rel="self" type="application/rss+xml" /><item>
+    <title>细思极恐-你真的会写java吗?</title>
+    <link>/2021/can_you_write_java/</link>
+    <pubDate>Thu, 22 Jul 2021 14:37:48 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>/2021/can_you_write_java/</guid>
+    <description><![CDATA[Java 最佳实践]]></description>
+</item></channel>
+</rss>

@@ -4,7 +4,14 @@
         <link>/tags/java/</link>
         <description>Java - Tag - Charles&#39; Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>xiaoshuaizx@gmail.com (CharlesCheung)</managingEditor>
-            <webMaster>xiaoshuaizx@gmail.com (CharlesCheung)</webMaster><lastBuildDate>Fri, 25 Jun 2021 14:37:48 &#43;0800</lastBuildDate><atom:link href="/tags/java/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>xiaoshuaizx@gmail.com (CharlesCheung)</webMaster><lastBuildDate>Thu, 22 Jul 2021 14:37:48 &#43;0800</lastBuildDate><atom:link href="/tags/java/" rel="self" type="application/rss+xml" /><item>
+    <title>细思极恐-你真的会写java吗?</title>
+    <link>/2021/can_you_write_java/</link>
+    <pubDate>Thu, 22 Jul 2021 14:37:48 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>/2021/can_you_write_java/</guid>
+    <description><![CDATA[Java 最佳实践]]></description>
+</item><item>
     <title>Java 基础</title>
     <link>/2021/java-basic/</link>
     <pubDate>Fri, 25 Jun 2021 14:37:48 &#43;0800</pubDate>
