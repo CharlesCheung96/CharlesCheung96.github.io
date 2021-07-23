@@ -4,9 +4,16 @@
         <link>/</link>
         <description>Charles&#39; Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>xiaoshuaizx@gmail.com (CharlesCheung)</managingEditor>
-            <webMaster>xiaoshuaizx@gmail.com (CharlesCheung)</webMaster><lastBuildDate>Thu, 22 Jul 2021 14:37:48 &#43;0800</lastBuildDate>
+            <webMaster>xiaoshuaizx@gmail.com (CharlesCheung)</webMaster><lastBuildDate>Fri, 23 Jul 2021 14:46:29 &#43;0800</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>java匠人手法-优雅的处理空值</title>
+    <link>/2021/java-handle-null/</link>
+    <pubDate>Fri, 23 Jul 2021 14:46:29 &#43;0800</pubDate>
+    <author>Author</author>
+    <guid>/2021/java-handle-null/</guid>
+    <description><![CDATA[Java 最佳实践]]></description>
+</item><item>
     <title>细思极恐-你真的会写java吗?</title>
     <link>/2021/can_you_write_java/</link>
     <pubDate>Thu, 22 Jul 2021 14:37:48 &#43;0800</pubDate>
@@ -69,12 +76,5 @@
     <author>Author</author>
     <guid>/2019/emoji-support/</guid>
     <description><![CDATA[<p>Emoji 可以通过多种方式在 Hugo 项目中启用.</p>]]></description>
-</item><item>
-    <title>First_post</title>
-    <link>/2021/first_post/</link>
-    <pubDate>Thu, 24 Jun 2021 11:00:54 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>/2021/first_post/</guid>
-    <description><![CDATA[First Posts 1. 嵌入YouTube视频 2. 嵌入Bilibili视频 3. 流程图支持 sequenceDiagram participant Alices participant Bob Alice-John: Hello John, how are you? loop Healthcheck John-John: Fight against hypochondria end Note right of John: Rational thoughts prevail... John--Alice: Great! John-Bob: How about you? Bodb--John: Jolly good!]]></description>
 </item></channel>
 </rss>

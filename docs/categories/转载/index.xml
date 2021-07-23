@@ -1,10 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>最佳实践 - Tag - Charles&#39; Blog</title>
-        <link>/tags/%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/</link>
-        <description>最佳实践 - Tag - Charles&#39; Blog</description>
+        <title>转载 - Category - Charles&#39; Blog</title>
+        <link>/categories/%E8%BD%AC%E8%BD%BD/</link>
+        <description>转载 - Category - Charles&#39; Blog</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>xiaoshuaizx@gmail.com (CharlesCheung)</managingEditor>
-            <webMaster>xiaoshuaizx@gmail.com (CharlesCheung)</webMaster><lastBuildDate>Fri, 23 Jul 2021 14:46:29 &#43;0800</lastBuildDate><atom:link href="/tags/%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>xiaoshuaizx@gmail.com (CharlesCheung)</webMaster><lastBuildDate>Fri, 23 Jul 2021 14:46:29 &#43;0800</lastBuildDate><atom:link href="/categories/%E8%BD%AC%E8%BD%BD/" rel="self" type="application/rss+xml" /><item>
     <title>java匠人手法-优雅的处理空值</title>
     <link>/2021/java-handle-null/</link>
     <pubDate>Fri, 23 Jul 2021 14:46:29 &#43;0800</pubDate>

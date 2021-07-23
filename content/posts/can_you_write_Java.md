@@ -8,7 +8,7 @@ author: "Charles"
 description: "转载"
 summary: "Java 最佳实践"
 tags: ["Java", "编程语言", "最佳实践"]
-categories: ["Java"]
+categories: ["Java", "转载"]
 lightgallery: true
 ---
 
