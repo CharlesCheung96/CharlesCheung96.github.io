@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0f172a">
+<title>意大利行程天气 · 2026</title>
+<style>
+:root{--bg:#f8fafc;--card:#fff;--text:#0f172a;--muted:#64748b;--line:#e2e8f0;--good:#166534;--goodbg:#dcfce7;--warn:#92400e;--warnbg:#fef3c7;--bad:#991b1b;--badbg:#fee2e2;--accent:#2563eb}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:1120px;margin:auto;padding:24px 16px 56px}.hero{background:linear-gradient(135deg,#0f172a,#1e3a8a);color:#fff;border-radius:24px;padding:28px;box-shadow:0 18px 45px rgba(15,23,42,.16)}
+.hero h1{margin:0 0 8px;font-size:clamp(26px,5vw,42px)} .hero p{margin:6px 0;color:#dbeafe}.meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}.pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);padding:8px 12px;border-radius:999px;font-size:14px}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:18px 0;flex-wrap:wrap}.note{font-size:13px;color:var(--muted)}button{border:0;background:#0f172a;color:#fff;padding:10px 14px;border-radius:12px;font-weight:600;cursor:pointer}
+.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}.stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px}.stat b{display:block;font-size:24px;margin-top:4px}.stat span{color:var(--muted);font-size:13px}
+.section{margin-top:26px}.section h2{font-size:20px;margin:0 0 12px}.alerts{display:grid;gap:10px}.alert{border-radius:14px;padding:12px 14px;border:1px solid var(--line);background:#fff}.alert.bad{background:var(--badbg);border-color:#fecaca;color:var(--bad)}.alert.warn{background:var(--warnbg);border-color:#fde68a;color:var(--warn)}.alert.good{background:var(--goodbg);border-color:#bbf7d0;color:var(--good)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.day{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:0 4px 18px rgba(15,23,42,.04)}.day .top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.date{font-weight:800;font-size:18px}.route{font-size:13px;color:var(--muted);margin-top:4px}.badge{padding:6px 9px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}.badge.good{background:var(--goodbg);color:var(--good)}.badge.warn{background:var(--warnbg);color:var(--warn)}.badge.bad{background:var(--badbg);color:var(--bad)}.weather-list{display:grid;gap:10px;margin-top:14px}.wx{border-top:1px dashed var(--line);padding-top:10px}.wx:first-child{border-top:0;padding-top:0}.wxhead{display:flex;align-items:center;justify-content:space-between;gap:10px}.place{font-weight:700}.desc{color:var(--muted);font-size:13px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:8px}.metric{background:#f8fafc;border-radius:12px;padding:9px}.metric span{display:block;color:var(--muted);font-size:11px}.metric b{font-size:14px}.empty{padding:22px;text-align:center;color:var(--muted);background:#fff;border:1px dashed var(--line);border-radius:16px}
+.footer{margin-top:30px;color:var(--muted);font-size:12px;line-height:1.7}.loading{opacity:.65}
+@media(max-width:760px){.summary{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}.hero{padding:22px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <h1>🇮🇹 意大利行程天气</h1>
+    <p>2026/09/25–10/06 · 罗马 → 佛罗伦萨 → 威尼斯 → 博尔扎诺/多洛米蒂 → 米兰</p>
+    <div class="meta">
+      <span class="pill">每次打开自动刷新</span>
+      <span class="pill">重点监控：降雨 / 雷暴 / 大风 / 低温</span>
+      <span class="pill" id="updated">正在获取最新天气…</span>
+    </div>
+  </section>
+
+  <div class="toolbar">
+    <div class="note" id="windowNote">天气数据来自 Open‑Meteo；较远日期会在进入预报窗口后自动出现。</div>
+    <button id="refreshBtn">立即刷新</button>
+  </div>
+
+  <div class="summary">
+    <div class="stat"><span>行程天数</span><b>12 天</b></div>
+    <div class="stat"><span>当前高风险天气</span><b id="riskCount">—</b></div>
+    <div class="stat"><span>未来预报已覆盖</span><b id="coverage">—</b></div>
+  </div>
+
+  <section class="section">
+    <h2>需要注意</h2>
+    <div class="alerts" id="alerts"><div class="alert">正在分析最新预报…</div></div>
+  </section>
+
+  <section class="section">
+    <h2>完整行程天气</h2>
+    <div class="grid" id="days"></div>
+  </section>
+
+  <div class="footer">
+    <div>数据源：Open‑Meteo Forecast API（Europe/Rome 时区）。页面为纯静态 HTML + JavaScript，不保存个人数据，也不需要 API Key。</div>
+    <div>提示：7 天内预报参考价值较高；8–16 天以趋势为主。多洛米蒂使用 Passo Sella 附近高海拔坐标，温度会显著低于博尔扎诺市区。</div>
+  </div>
+</div>
+
+<script>
+const TRIP_START='2026-09-25', TRIP_END='2026-10-06';
+const itinerary=[
+  {date:'2026-09-25',label:'抵达罗马',places:['rome']},
+  {date:'2026-09-26',label:'罗马 · 圣彼得大教堂 / 穹顶 / 博尔盖塞',places:['rome']},
+  {date:'2026-09-27',label:'罗马',places:['rome']},
+  {date:'2026-09-28',label:'罗马',places:['rome']},
+  {date:'2026-09-29',label:'罗马 → 佛罗伦萨 · 17:15 乔托钟楼',places:['rome','florence']},
+  {date:'2026-09-30',label:'佛罗伦萨 · 13:30 学院美术馆 → 威尼斯',places:['florence','venice']},
+  {date:'2026-10-01',label:'威尼斯',places:['venice']},
+  {date:'2026-10-02',label:'威尼斯 → 博尔扎诺 / 多洛米蒂',places:['venice','bolzano','dolomites']},
+  {date:'2026-10-03',label:'博尔扎诺 / 多洛米蒂',places:['bolzano','dolomites']},
+  {date:'2026-10-04',label:'博尔扎诺 / 多洛米蒂 → 米兰',places:['bolzano','dolomites','milan']},
+  {date:'2026-10-05',label:'米兰 · 08:00 还车',places:['milan']},
+  {date:'2026-10-06',label:'米兰 → 马尔彭萨机场离境',places:['milan']}
+];
+const places={
+  rome:{name:'罗马',lat:41.9028,lon:12.4964},
+  florence:{name:'佛罗伦萨',lat:43.7696,lon:11.2558},
+  venice:{name:'威尼斯/梅斯特雷',lat:45.4408,lon:12.3155},
+  bolzano:{name:'博尔扎诺',lat:46.4983,lon:11.3548},
+  dolomites:{name:'多洛米蒂 · Passo Sella',lat:46.5086,lon:11.7575,mountain:true},
+  milan:{name:'米兰',lat:45.4642,lon:9.1900}
+};
+const wxCodes={
+  0:['☀️','晴'],1:['🌤️','大部晴朗'],2:['⛅','局部多云'],3:['☁️','阴'],
+  45:['🌫️','雾'],48:['🌫️','雾凇'],51:['🌦️','小毛毛雨'],53:['🌦️','毛毛雨'],55:['🌧️','较强毛毛雨'],
+  56:['🌧️','冻毛毛雨'],57:['🌧️','强冻毛毛雨'],61:['🌦️','小雨'],63:['🌧️','中雨'],65:['🌧️','大雨'],
+  66:['🌧️','冻雨'],67:['🌧️','强冻雨'],71:['🌨️','小雪'],73:['🌨️','中雪'],75:['❄️','大雪'],77:['❄️','雪粒'],
+  80:['🌦️','阵雨'],81:['🌧️','较强阵雨'],82:['🌧️','强阵雨'],85:['🌨️','阵雪'],86:['🌨️','强阵雪'],
+  95:['⛈️','雷暴'],96:['⛈️','雷暴伴冰雹'],99:['⛈️','强雷暴伴冰雹']
+};
+function isoDateLocal(d){return d.toLocaleDateString('en-CA',{timeZone:'Europe/Rome'})}
+function dayDiff(a,b){return Math.round((new Date(b+'T12:00:00Z')-new Date(a+'T12:00:00Z'))/86400000)}
+function riskOf(x,p){
+  const reasons=[]; let level=0;
+  if(x.code>=95){level=2;reasons.push('雷暴');}
+  if((x.pop??0)>=60 || (x.rain??0)>=8){level=Math.max(level,2);reasons.push('明显降雨');}
+  else if((x.pop??0)>=35 || (x.rain??0)>=3){level=Math.max(level,1);reasons.push('可能降雨');}
+  if((x.gust??0)>=55){level=Math.max(level,2);reasons.push('强阵风');}
+  else if((x.gust??0)>=40){level=Math.max(level,1);reasons.push('大风');}
+  if((x.min??99)<=0){level=Math.max(level,2);reasons.push('低于/接近 0°C');}
+  else if(p.mountain && (x.min??99)<=4){level=Math.max(level,1);reasons.push('高海拔低温');}
+  return {level,reasons};
+}
+function badge(level){return level===2?['高风险','bad']:level===1?['注意','warn']:['正常','good']}
+function fmt(v,suffix=''){return v==null?'—':Math.round(v)+suffix}
+async function fetchPlace(key){
+  const p=places[key];
+  const url=new URL('https://api.open-meteo.com/v1/forecast');
+  url.searchParams.set('latitude',p.lat);
+  url.searchParams.set('longitude',p.lon);
+  url.searchParams.set('daily','weather_code,temperature_2m_max,temperature_2m_min,precipitation_sum,precipitation_probability_max,wind_gusts_10m_max');
+  url.searchParams.set('timezone','Europe/Rome');
+  url.searchParams.set('forecast_days','16');
+  const r=await fetch(url);
+  if(!r.ok) throw new Error(p.name+' weather API '+r.status);
+  const j=await r.json(), out={};
+  j.daily.time.forEach((d,i)=>out[d]={
+    code:j.daily.weather_code[i],
+    max:j.daily.temperature_2m_max[i], min:j.daily.temperature_2m_min[i],
+    rain:j.daily.precipitation_sum[i], pop:j.daily.precipitation_probability_max[i],
+    gust:j.daily.wind_gusts_10m_max[i]
+  });
+  return out;
+}
+async function load(){
+  document.body.classList.add('loading');
+  document.getElementById('refreshBtn').disabled=true;
+  try{
+    const keys=Object.keys(places);
+    const values=await Promise.all(keys.map(fetchPlace));
+    const data={};keys.forEach((k,i)=>data[k]=values[i]);
+    render(data);
+    const now=new Date();
+    document.getElementById('updated').textContent='最新刷新：'+now.toLocaleString('zh-CN',{timeZone:'Europe/Rome',hour12:false})+'（意大利时间）';
+  }catch(e){
+    document.getElementById('alerts').innerHTML='<div class="alert bad">天气接口暂时不可用：'+e.message+'。稍后刷新页面即可重试。</div>';
+  }finally{
+    document.body.classList.remove('loading');
+    document.getElementById('refreshBtn').disabled=false;
+  }
+}
+function render(data){
+  const today=isoDateLocal(new Date());
+  let covered=0,total=0,high=0; const alertRows=[];
+  const dayHtml=itinerary.map(day=>{
+    const wxRows=[];
+    let dayLevel=0;
+    day.places.forEach(key=>{
+      total++;
+      const x=data[key][day.date];
+      if(!x){
+        wxRows.push('<div class="wx"><div class="wxhead"><div><div class="place">'+places[key].name+'</div><div class="desc">尚未进入 16 天预报窗口</div></div></div></div>');
+        return;
+      }
+      covered++;
+      const rr=riskOf(x,places[key]); dayLevel=Math.max(dayLevel,rr.level); if(rr.level===2) high++;
+      if(rr.level>0) alertRows.push({date:day.date,place:places[key].name,level:rr.level,text:rr.reasons.join('、'),x});
+      const wc=wxCodes[x.code]||['🌡️','天气代码 '+x.code];
+      wxRows.push('<div class="wx"><div class="wxhead"><div><div class="place">'+wc[0]+' '+places[key].name+'</div><div class="desc">'+wc[1]+'</div></div><div><b>'+fmt(x.max,'°')+'</b> / '+fmt(x.min,'°')+'</div></div>'+
+        '<div class="metrics"><div class="metric"><span>降雨概率</span><b>'+fmt(x.pop,'%')+'</b></div><div class="metric"><span>降水量</span><b>'+((x.rain??0).toFixed(1))+' mm</b></div><div class="metric"><span>最大阵风</span><b>'+fmt(x.gust,' km/h')+'</b></div><div class="metric"><span>距今天</span><b>'+dayDiff(today,day.date)+' 天</b></div></div></div>');
+    });
+    const b=badge(dayLevel);
+    return '<article class="day"><div class="top"><div><div class="date">'+day.date.slice(5).replace('-','/')+'</div><div class="route">'+day.label+'</div></div><span class="badge '+b[1]+'">'+b[0]+'</span></div><div class="weather-list">'+wxRows.join('')+'</div></article>';
+  }).join('');
+  document.getElementById('days').innerHTML=dayHtml;
+  document.getElementById('riskCount').textContent=high+' 项';
+  document.getElementById('coverage').textContent=covered+' / '+total+' 项';
+
+  alertRows.sort((a,b)=>b.level-a.level || a.date.localeCompare(b.date));
+  if(!alertRows.length){
+    document.getElementById('alerts').innerHTML='<div class="alert good">当前已进入预报窗口的行程中，没有发现明显的雷暴、强降雨、大风或低温风险。</div>';
+  }else{
+    document.getElementById('alerts').innerHTML=alertRows.slice(0,8).map(a=>{
+      const cls=a.level===2?'bad':'warn';
+      return '<div class="alert '+cls+'"><b>'+a.date.slice(5).replace('-','/')+' · '+a.place+'</b>：'+a.text+'（'+fmt(a.max,'°')+'/'+fmt(a.min,'°')+'，降雨 '+fmt(a.pop,'%')+'，阵风 '+fmt(a.gust,' km/h')+'）</div>';
+    }).join('');
+  }
+  const maxForecast=Object.values(data)[0] ? Object.keys(Object.values(data)[0]).slice(-1)[0] : '—';
+  document.getElementById('windowNote').textContent='当前 API 逐日预报覆盖至 '+maxForecast+'；更远日期进入窗口后会自动显示。每次打开页面都会获取最新数据。';
+}
+document.getElementById('refreshBtn').addEventListener('click',load);
+load();
+setInterval(load,6*60*60*1000);
+</script>
+</body>
+</html>
