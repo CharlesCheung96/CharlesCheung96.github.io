@@ -11,9 +11,9 @@
 .wrap{max-width:1120px;margin:auto;padding:24px 16px 56px}.hero{background:linear-gradient(135deg,#0f172a,#1e3a8a);color:#fff;border-radius:24px;padding:28px;box-shadow:0 18px 45px rgba(15,23,42,.16)}
 .hero h1{margin:0 0 8px;font-size:clamp(26px,5vw,42px)} .hero p{margin:6px 0;color:#dbeafe}.meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}.pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);padding:8px 12px;border-radius:999px;font-size:14px}
 .toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:18px 0;flex-wrap:wrap}.note{font-size:13px;color:var(--muted)}button{border:0;background:#0f172a;color:#fff;padding:10px 14px;border-radius:12px;font-weight:600;cursor:pointer}
-.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}.stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px}.stat b{display:block;font-size:24px;margin-top:4px}.stat span{color:var(--muted);font-size:13px}
-.section{margin-top:26px}.section h2{font-size:20px;margin:0 0 12px}.alerts{display:grid;gap:10px}.alert{border-radius:14px;padding:12px 14px;border:1px solid var(--line);background:#fff}.alert.bad{background:var(--badbg);border-color:#fecaca;color:var(--bad)}.alert.warn{background:var(--warnbg);border-color:#fde68a;color:var(--warn)}.alert.good{background:var(--goodbg);border-color:#bbf7d0;color:var(--good)}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.day{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:0 4px 18px rgba(15,23,42,.04)}.day .top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.date{font-weight:800;font-size:18px}.route{font-size:13px;color:var(--muted);margin-top:4px}.badge{padding:6px 9px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}.badge.good{background:var(--goodbg);color:var(--good)}.badge.warn{background:var(--warnbg);color:var(--warn)}.badge.bad{background:var(--badbg);color:var(--bad)}.weather-list{display:grid;gap:10px;margin-top:14px}.wx{border-top:1px dashed var(--line);padding-top:10px}.wx:first-child{border-top:0;padding-top:0}.wxhead{display:flex;align-items:center;justify-content:space-between;gap:10px}.place{font-weight:700}.desc{color:var(--muted);font-size:13px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:8px}.metric{background:#f8fafc;border-radius:12px;padding:9px}.metric span{display:block;color:var(--muted);font-size:11px}.metric b{font-size:14px}.empty{padding:22px;text-align:center;color:var(--muted);background:#fff;border:1px dashed var(--line);border-radius:16px}
+.summary{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:18px 0}.stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px}.stat b{display:block;font-size:24px;margin-top:4px}.stat span{color:var(--muted);font-size:13px}
+.section{margin-top:26px}.section h2{font-size:20px;margin:0 0 12px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.day{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:0 4px 18px rgba(15,23,42,.04)}.day.high-risk{border:2px solid #ef4444;background:linear-gradient(180deg,rgba(254,226,226,.7),var(--card) 42%);box-shadow:0 8px 28px rgba(239,68,68,.14)}.risk-banner{margin:12px 0 2px;padding:10px 12px;border-radius:12px;background:var(--badbg);border:1px solid #fca5a5;color:var(--bad);font-size:13px;font-weight:700}.day .top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.date{font-weight:800;font-size:18px}.route{font-size:13px;color:var(--muted);margin-top:4px}.badge{padding:6px 9px;border-radius:999px;font-size:12px;font-weight:700;white-space:nowrap}.badge.good{background:var(--goodbg);color:var(--good)}.badge.warn{background:var(--warnbg);color:var(--warn)}.badge.bad{background:var(--badbg);color:var(--bad)}.weather-list{display:grid;gap:10px;margin-top:14px}.wx{border-top:1px dashed var(--line);padding-top:10px}.wx:first-child{border-top:0;padding-top:0}.wxhead{display:flex;align-items:center;justify-content:space-between;gap:10px}.place{font-weight:700}.desc{color:var(--muted);font-size:13px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:8px}.metric{background:#f8fafc;border-radius:12px;padding:9px}.metric span{display:block;color:var(--muted);font-size:11px}.metric b{font-size:14px}.empty{padding:22px;text-align:center;color:var(--muted);background:#fff;border:1px dashed var(--line);border-radius:16px}
 .footer{margin-top:30px;color:var(--muted);font-size:12px;line-height:1.7}.loading{opacity:.65}
 @media(max-width:760px){.summary{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,1fr)}.hero{padding:22px}}
 </style>
@@ -38,14 +38,7 @@
   <div class="summary">
     <div class="stat"><span>行程天数</span><b>12 天</b></div>
     <div class="stat"><span>当前高风险天气</span><b id="riskCount">—</b></div>
-    <div class="stat"><span>未来预报已覆盖</span><b id="coverage">—</b></div>
   </div>
-
-  <section class="section">
-    <h2>需要注意</h2>
-    <div class="note" style="margin:-4px 0 10px">提醒只按当天主要活动地点判断；沿途城市天气仍保留在下方完整行程中。</div>
-    <div class="alerts" id="alerts"><div class="alert">正在分析最新预报…</div></div>
-  </section>
 
   <section class="section">
     <h2>完整行程天气</h2>
@@ -135,7 +128,8 @@ async function load(){
     const now=new Date();
     document.getElementById('updated').textContent='最新刷新：'+now.toLocaleString('zh-CN',{timeZone:'Europe/Rome',hour12:false})+'（意大利时间）';
   }catch(e){
-    document.getElementById('alerts').innerHTML='<div class="alert bad">天气接口暂时不可用：'+e.message+'。稍后刷新页面即可重试。</div>';
+    document.getElementById('windowNote').textContent='天气接口暂时不可用：'+e.message+'。稍后刷新页面即可重试。';
+    document.getElementById('days').innerHTML='<div class="empty">天气加载失败，请稍后点击“立即刷新”重试。</div>';
   }finally{
     document.body.classList.remove('loading');
     document.getElementById('refreshBtn').disabled=false;
@@ -143,48 +137,37 @@ async function load(){
 }
 function render(data){
   const today=isoDateLocal(new Date());
-  let covered=0,total=0,high=0; const alertRows=[];
+  let high=0;
   const dayHtml=itinerary.map(day=>{
     const wxRows=[];
-    let dayLevel=0;
     day.places.forEach(key=>{
-      total++;
       const x=data[key][day.date];
       if(!x){
         wxRows.push('<div class="wx"><div class="wxhead"><div><div class="place">'+places[key].name+'</div><div class="desc">尚未进入 16 天预报窗口</div></div></div></div>');
         return;
       }
-      covered++;
-      const rr=riskOf(x,places[key]); dayLevel=Math.max(dayLevel,rr.level);
       const wc=wxCodes[x.code]||['🌡️','天气代码 '+x.code];
       wxRows.push('<div class="wx"><div class="wxhead"><div><div class="place">'+wc[0]+' '+places[key].name+'</div><div class="desc">'+wc[1]+'</div></div><div><b>'+fmt(x.max,'°')+'</b> / '+fmt(x.min,'°')+'</div></div>'+
         '<div class="metrics"><div class="metric"><span>降雨概率</span><b>'+fmt(x.pop,'%')+'</b></div><div class="metric"><span>降水量</span><b>'+((x.rain??0).toFixed(1))+' mm</b></div><div class="metric"><span>最大阵风</span><b>'+fmt(x.gust,' km/h')+'</b></div><div class="metric"><span>距今天</span><b>'+dayDiff(today,day.date)+' 天</b></div></div></div>');
     });
+
     const alertKey=day.alertPlace;
     const alertX=data[alertKey] && data[alertKey][day.date];
-    if(alertX){
-      const ar=riskOf(alertX,places[alertKey]);
-      if(ar.level===2) high++;
-      if(ar.level>0) alertRows.push({date:day.date,place:places[alertKey].name,level:ar.level,text:ar.reasons.join('、'),x:alertX});
-    }
-    const b=badge(dayLevel);
-    return '<article class="day"><div class="top"><div><div class="date">'+day.date.slice(5).replace('-','/')+'</div><div class="route">'+day.label+'</div></div><span class="badge '+b[1]+'">'+b[0]+'</span></div><div class="weather-list">'+wxRows.join('')+'</div></article>';
+    const ar=alertX ? riskOf(alertX,places[alertKey]) : {level:0,reasons:[]};
+    if(ar.level===2) high++;
+    const b=badge(ar.level);
+    const highClass=ar.level===2?' high-risk':'';
+    const riskBanner=ar.level===2
+      ? '<div class="risk-banner">⚠️ 高风险天气 · '+places[alertKey].name+'：'+ar.reasons.join('、')+'。降雨 '+fmt(alertX.pop,'%')+'，阵风 '+fmt(alertX.gust,' km/h')+'，'+fmt(alertX.max,'°')+'/'+fmt(alertX.min,'°')+'</div>'
+      : '';
+
+    return '<article class="day'+highClass+'"><div class="top"><div><div class="date">'+day.date.slice(5).replace('-','/')+'</div><div class="route">'+day.label+'</div></div><span class="badge '+b[1]+'">'+b[0]+'</span></div>'+riskBanner+'<div class="weather-list">'+wxRows.join('')+'</div></article>';
   }).join('');
   document.getElementById('days').innerHTML=dayHtml;
-  document.getElementById('riskCount').textContent=high+' 项';
-  document.getElementById('coverage').textContent=covered+' / '+total+' 项';
+  document.getElementById('riskCount').textContent=high+' 天';
 
-  alertRows.sort((a,b)=>b.level-a.level || a.date.localeCompare(b.date));
-  if(!alertRows.length){
-    document.getElementById('alerts').innerHTML='<div class="alert good">当前已进入预报窗口的行程中，没有发现明显的雷暴、强降雨、大风或低温风险。</div>';
-  }else{
-    document.getElementById('alerts').innerHTML=alertRows.slice(0,8).map(a=>{
-      const cls=a.level===2?'bad':'warn';
-      return '<div class="alert '+cls+'"><b>'+a.date.slice(5).replace('-','/')+' · '+a.place+'</b>：'+a.text+'（'+fmt(a.max,'°')+'/'+fmt(a.min,'°')+'，降雨 '+fmt(a.pop,'%')+'，阵风 '+fmt(a.gust,' km/h')+'）</div>';
-    }).join('');
-  }
   const maxForecast=Object.values(data)[0] ? Object.keys(Object.values(data)[0]).slice(-1)[0] : '—';
-  document.getElementById('windowNote').textContent='当前 API 逐日预报覆盖至 '+maxForecast+'；更远日期进入窗口后会自动显示。每次打开页面都会获取最新数据。';
+  document.getElementById('windowNote').textContent='当前 API 逐日预报覆盖至 '+maxForecast+'；高风险天气会直接在对应日期卡片中高亮。每次打开页面都会获取最新数据。';
 }
 document.getElementById('refreshBtn').addEventListener('click',load);
 load();
