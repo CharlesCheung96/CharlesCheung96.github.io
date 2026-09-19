@@ -43,6 +43,7 @@
 
   <section class="section">
     <h2>需要注意</h2>
+    <div class="note" style="margin:-4px 0 10px">提醒只按当天主要活动地点判断；沿途城市天气仍保留在下方完整行程中。</div>
     <div class="alerts" id="alerts"><div class="alert">正在分析最新预报…</div></div>
   </section>
 
@@ -60,18 +61,18 @@
 <script>
 const TRIP_START='2026-09-25', TRIP_END='2026-10-06';
 const itinerary=[
-  {date:'2026-09-25',label:'抵达罗马',places:['rome']},
-  {date:'2026-09-26',label:'罗马 · 圣彼得大教堂 / 穹顶 / 博尔盖塞',places:['rome']},
-  {date:'2026-09-27',label:'罗马',places:['rome']},
-  {date:'2026-09-28',label:'罗马',places:['rome']},
-  {date:'2026-09-29',label:'罗马 → 佛罗伦萨 · 17:15 乔托钟楼',places:['rome','florence']},
-  {date:'2026-09-30',label:'佛罗伦萨 · 13:30 学院美术馆 → 威尼斯',places:['florence','venice']},
-  {date:'2026-10-01',label:'威尼斯',places:['venice']},
-  {date:'2026-10-02',label:'威尼斯 → 博尔扎诺 / 多洛米蒂',places:['venice','bolzano','dolomites']},
-  {date:'2026-10-03',label:'博尔扎诺 / 多洛米蒂',places:['bolzano','dolomites']},
-  {date:'2026-10-04',label:'博尔扎诺 / 多洛米蒂 → 米兰',places:['bolzano','dolomites','milan']},
-  {date:'2026-10-05',label:'米兰 · 08:00 还车',places:['milan']},
-  {date:'2026-10-06',label:'米兰 → 马尔彭萨机场离境',places:['milan']}
+  {date:'2026-09-25',label:'抵达罗马',places:['rome'],alertPlace:'rome'},
+  {date:'2026-09-26',label:'罗马 · 圣彼得大教堂 / 穹顶 / 博尔盖塞',places:['rome'],alertPlace:'rome'},
+  {date:'2026-09-27',label:'罗马',places:['rome'],alertPlace:'rome'},
+  {date:'2026-09-28',label:'罗马',places:['rome'],alertPlace:'rome'},
+  {date:'2026-09-29',label:'罗马 → 佛罗伦萨 · 17:15 乔托钟楼',places:['rome','florence'],alertPlace:'florence'},
+  {date:'2026-09-30',label:'佛罗伦萨 · 13:30 学院美术馆 → 威尼斯',places:['florence','venice'],alertPlace:'florence'},
+  {date:'2026-10-01',label:'威尼斯',places:['venice'],alertPlace:'venice'},
+  {date:'2026-10-02',label:'威尼斯 → 博尔扎诺 / 多洛米蒂',places:['venice','bolzano','dolomites'],alertPlace:'bolzano'},
+  {date:'2026-10-03',label:'博尔扎诺 / 多洛米蒂',places:['bolzano','dolomites'],alertPlace:'dolomites'},
+  {date:'2026-10-04',label:'博尔扎诺 / 多洛米蒂 → 米兰',places:['bolzano','dolomites','milan'],alertPlace:'milan'},
+  {date:'2026-10-05',label:'米兰 · 08:00 还车',places:['milan'],alertPlace:'milan'},
+  {date:'2026-10-06',label:'米兰 → 马尔彭萨机场离境',places:['milan'],alertPlace:'milan'}
 ];
 const places={
   rome:{name:'罗马',lat:41.9028,lon:12.4964},
@@ -154,12 +155,18 @@ function render(data){
         return;
       }
       covered++;
-      const rr=riskOf(x,places[key]); dayLevel=Math.max(dayLevel,rr.level); if(rr.level===2) high++;
-      if(rr.level>0) alertRows.push({date:day.date,place:places[key].name,level:rr.level,text:rr.reasons.join('、'),x});
+      const rr=riskOf(x,places[key]); dayLevel=Math.max(dayLevel,rr.level);
       const wc=wxCodes[x.code]||['🌡️','天气代码 '+x.code];
       wxRows.push('<div class="wx"><div class="wxhead"><div><div class="place">'+wc[0]+' '+places[key].name+'</div><div class="desc">'+wc[1]+'</div></div><div><b>'+fmt(x.max,'°')+'</b> / '+fmt(x.min,'°')+'</div></div>'+
         '<div class="metrics"><div class="metric"><span>降雨概率</span><b>'+fmt(x.pop,'%')+'</b></div><div class="metric"><span>降水量</span><b>'+((x.rain??0).toFixed(1))+' mm</b></div><div class="metric"><span>最大阵风</span><b>'+fmt(x.gust,' km/h')+'</b></div><div class="metric"><span>距今天</span><b>'+dayDiff(today,day.date)+' 天</b></div></div></div>');
     });
+    const alertKey=day.alertPlace;
+    const alertX=data[alertKey] && data[alertKey][day.date];
+    if(alertX){
+      const ar=riskOf(alertX,places[alertKey]);
+      if(ar.level===2) high++;
+      if(ar.level>0) alertRows.push({date:day.date,place:places[alertKey].name,level:ar.level,text:ar.reasons.join('、'),x:alertX});
+    }
     const b=badge(dayLevel);
     return '<article class="day"><div class="top"><div><div class="date">'+day.date.slice(5).replace('-','/')+'</div><div class="route">'+day.label+'</div></div><span class="badge '+b[1]+'">'+b[0]+'</span></div><div class="weather-list">'+wxRows.join('')+'</div></article>';
   }).join('');
