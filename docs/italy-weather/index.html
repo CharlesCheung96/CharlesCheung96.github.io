@@ -129,7 +129,6 @@ async function load(){
     const now=new Date();
     document.getElementById('updated').textContent='最新刷新：'+now.toLocaleString('zh-CN',{timeZone:'Europe/Rome',hour12:false})+'（意大利时间）';
   }catch(e){
-    document.getElementById('windowNote').textContent='天气接口暂时不可用：'+e.message+'。稍后刷新页面即可重试。';
     document.getElementById('days').innerHTML='<div class="empty">天气加载失败，请稍后点击“立即刷新”重试。</div>';
   }finally{
     document.body.classList.remove('loading');
@@ -167,8 +166,7 @@ function render(data){
   document.getElementById('days').innerHTML=dayHtml;
   document.getElementById('riskCount').textContent=high+' 天';
 
-  const maxForecast=Object.values(data)[0] ? Object.keys(Object.values(data)[0]).slice(-1)[0] : '—';
-  document.getElementById('windowNote').textContent='当前 API 逐日预报覆盖至 '+maxForecast+'；高风险天气会直接在对应日期卡片中高亮。每次打开页面都会获取最新数据。';
+
 }
 document.getElementById('refreshBtn').addEventListener('click',load);
 load();
