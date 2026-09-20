@@ -23,7 +23,7 @@ ignoreFiles = [
   series = "series"
 
 [permalinks]
-  posts = "/:year/:filename/"
+  posts = "/:year/:contentbasename/"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
