@@ -1,0 +1,21 @@
+disabled = false
+locale = "zh-CN"
+label = "中文"
+weight = 1
+title = "Charles' Blog"
+
+[params]
+  displayName = "中文"
+  isoCode = "zh-cn"
+  rtl = false
+  dateFormat = "2006-01-02"
+  description = "Database · Storage · Distributed Systems"
+
+[params.author]
+  name = "Charles"
+  headline = "Database · Storage · Distributed Systems"
+  bio = "Engineering notes, systems, databases and things worth remembering."
+  links = [
+    { github = "https://github.com/CharlesCheung96" },
+    { rss = "/index.xml" }
+  ]
