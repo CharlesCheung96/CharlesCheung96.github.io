@@ -1,0 +1,53 @@
+name: Build Hugo site
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "docs/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-site
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.23.x"
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.162.0"
+          extended: true
+
+      - name: Build
+        run: |
+          hugo mod get -u
+          rm -rf docs
+          hugo --gc --minify
+
+      - name: Commit generated site
+        run: |
+          if git diff --quiet -- docs; then
+            echo "No generated changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs
+          git commit -m "chore: rebuild site [skip ci]"
+          git push
