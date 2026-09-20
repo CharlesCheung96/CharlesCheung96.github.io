@@ -1,0 +1,34 @@
+baseURL = "https://blog.xringz.com/"
+defaultContentLanguage = "zh-cn"
+hasCJKLanguage = true
+enableRobotsTXT = true
+enableEmoji = true
+publishDir = "docs"
+summaryLength = 32
+
+ignoreFiles = [
+  "content/posts/theme-documentation-.*\\.md$",
+  "content/posts/emoji-support\\.md$",
+  "content/posts/markdown-basic\\.md$",
+  "content/posts/markdown\\.md$",
+  "content/posts/first_post\\.md$"
+]
+
+[pagination]
+  pagerSize = 8
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+
+[permalinks]
+  posts = "/:year/:filename/"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
