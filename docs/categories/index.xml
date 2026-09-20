@@ -1,14 +1,1 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-    <channel>
-        <title>Categories - Category - Charles&#39; Blog</title>
-        <link>/categories/</link>
-        <description>Categories - Category - Charles&#39; Blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 01 Dec 2019 21:57:40 &#43;0800</lastBuildDate><atom:link href="/categories/" rel="self" type="application/rss+xml" /><item>
-    <title>Markdown</title>
-    <link>/categories/markdown/</link>
-    <pubDate>Sun, 01 Dec 2019 21:57:40 &#43;0800</pubDate>
-    <author>Author</author>
-    <guid>/categories/markdown/</guid>
-    <description><![CDATA[]]></description>
-</item></channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Charles' Blog</title><link>https://blog.xringz.com/categories/</link><description>Recent content on Charles' Blog</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>© 2026 Charles</copyright><lastBuildDate>Fri, 23 Jul 2021 14:46:29 +0800</lastBuildDate><atom:link href="https://blog.xringz.com/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>Java</title><link>https://blog.xringz.com/categories/java/</link><pubDate>Fri, 23 Jul 2021 14:46:29 +0800</pubDate><guid>https://blog.xringz.com/categories/java/</guid><description/></item><item><title>转载</title><link>https://blog.xringz.com/categories/%E8%BD%AC%E8%BD%BD/</link><pubDate>Fri, 23 Jul 2021 14:46:29 +0800</pubDate><guid>https://blog.xringz.com/categories/%E8%BD%AC%E8%BD%BD/</guid><description/></item></channel></rss>
