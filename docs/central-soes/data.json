@@ -42,7 +42,10 @@
       "source": "https://pjcareer.dlut.edu.cn/info/1051/42392.htm",
       "recruitmentLabel": "中核人才招聘网",
       "note": "",
-      "auditNote": "企业在高校官方就业网发布的集团招聘简章列明该入口；本轮直连返回502。"
+      "auditNote": "企业在高校官方就业网发布的集团招聘简章列明该入口；本轮直连返回502。",
+      "established": "1999-06-29",
+      "establishedSource": "https://static.cninfo.com.cn/finalpage/2026-07-31/1225449587.PDF",
+      "establishedNote": "集团成立日期；不采用历史前身年份"
     },
     {
       "id": 11,
@@ -56,7 +59,11 @@
       "source": "https://trxf.cnpc.com.cn/content/h/content_44239.shtml",
       "recruitmentLabel": "高校毕业生招聘",
       "note": "",
-      "auditNote": "集团官方2026年春招公告明确该平台为高校毕业生招聘渠道。"
+      "auditNote": "集团官方2026年春招公告明确该平台为高校毕业生招聘渠道。",
+      "established": "1998",
+      "establishedSource": "https://www.casl.org.cn/gywm/cydw/qy/index.html",
+      "establishedNote": "1998年在原中石油总公司基础上组建",
+      "campusRecruitment": "https://zhaopin.cnpc.com.cn/"
     },
     {
       "id": 12,
@@ -70,7 +77,10 @@
       "source": "http://www.sinopecgroup.com/",
       "recruitmentLabel": "人才招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1998-07-27",
+      "establishedSource": "https://static.cninfo.com.cn/finalpage/2025-04-30/1223438420.pdf",
+      "establishedNote": "集团成立日期"
     },
     {
       "id": 13,
@@ -84,7 +94,10 @@
       "source": "https://www.cnooc.com.cn/zyzx/rczp/202409/t20240925_96884.html",
       "recruitmentLabel": "人才招聘指引",
       "note": "",
-      "auditNote": "官网人才招聘指引页，提供应届毕业生招聘平台入口。"
+      "auditNote": "官网人才招聘指引页，提供应届毕业生招聘平台入口。",
+      "established": "1982",
+      "establishedSource": "https://wap.sasac.gov.cn/n2588035/n2588325/n2588350/c27417501/content.html",
+      "establishedNote": "集团公开招聘公告称1982年成立"
     },
     {
       "id": 14,
@@ -98,7 +111,10 @@
       "source": "http://www.pipechina.com.cn",
       "recruitmentLabel": "人才招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "2019",
+      "establishedSource": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2025-08-20/243667_20250820_QVCF.pdf",
+      "establishedNote": "集团成立2019年；工商登记与挂牌日期资料有别，保留年份"
     },
     {
       "id": 15,
@@ -112,7 +128,10 @@
       "source": "https://zhaopin.sgcc.com.cn/",
       "recruitmentLabel": "人力资源招聘平台",
       "note": "",
-      "auditNote": "集团官方域名招聘平台；本轮官网首页受访问限制。"
+      "auditNote": "集团官方域名招聘平台；本轮官网首页受访问限制。",
+      "established": "2002-12-29",
+      "establishedSource": "https://wap.sasac.gov.cn/n2588035/n2588325/c35354295/content.html",
+      "establishedNote": "集团成立日期"
     },
     {
       "id": 16,
@@ -126,7 +145,10 @@
       "source": "http://www.csg.cn/",
       "recruitmentLabel": "人才招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "2002-12-29",
+      "establishedSource": "https://wap.sasac.gov.cn/n4470048/n13461446/n15421105/n15421129/c15771928/content.html",
+      "establishedNote": "集团挂牌成立日期"
     },
     {
       "id": 17,
@@ -140,7 +162,10 @@
       "source": "http://www.chng.com.cn/",
       "recruitmentLabel": "人才招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1985",
+      "establishedSource": "https://career.nankai.edu.cn/correcruit/content/id/119527.html",
+      "establishedNote": "集团招聘简章披露成立于1985年"
     },
     {
       "id": 18,
@@ -154,7 +179,11 @@
       "source": "https://gs.china-cdt.com/cdtgs/xwzx/jtxw/2026/9/I1552059660066881536.html",
       "recruitmentLabel": "人力资源市场平台",
       "note": "",
-      "auditNote": "集团官网2027年校园招聘公告明确该平台。"
+      "auditNote": "集团官网2027年校园招聘公告明确该平台。",
+      "established": "2002-12-29",
+      "establishedSource": "https://www.china-cdt.com/",
+      "establishedNote": "集团官网披露成立日期",
+      "campusRecruitment": "https://zhaopin.china-cdt.com/"
     },
     {
       "id": 19,
@@ -168,7 +197,10 @@
       "source": "http://www.chd.com.cn/",
       "recruitmentLabel": "人才招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "2002",
+      "establishedSource": "https://www.chd.com.cn/site/2/2026-09-14/b7dffff921ca499c90f84509cd272310.html",
+      "establishedNote": "集团官网披露成立于2002年"
     },
     {
       "id": 20,
@@ -182,7 +214,10 @@
       "source": "http://www.spic.com.cn/",
       "recruitmentLabel": "人才招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "2015",
+      "establishedSource": "https://static.cninfo.com.cn/finalpage/2025-04-30/1223448246.pdf",
+      "establishedNote": "2015年重组组建"
     },
     {
       "id": 21,
@@ -196,7 +231,12 @@
       "source": "https://tgf.ctg.com.cn/sxjt/rlzy71/rlzydt/index.html",
       "recruitmentLabel": "招聘与人才动态",
       "note": "",
-      "auditNote": "集团官方网站长期人力资源动态栏目，含校招和社招公告。"
+      "auditNote": "集团官方网站长期人力资源动态栏目，含校招和社招公告。",
+      "established": "1993-09-27",
+      "establishedSource": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-08-31/136683_20260831_5263.pdf",
+      "establishedNote": "集团成立日期；2017为改制更名",
+      "campusRecruitment": "https://tgf.ctg.com.cn/sxjt/rlzy71/rlzydt/index.html",
+      "socialRecruitment": "https://tgf.ctg.com.cn/sxjt/rlzy71/rlzydt/index.html"
     },
     {
       "id": 22,
@@ -210,7 +250,11 @@
       "source": "https://job.lzu.edu.cn/ueditor/upload/file/20250815/1755252189844046569.pdf",
       "recruitmentLabel": "2025社招公告",
       "note": "集团人力资源部2025年社招公告（PDF），原文标注长期报名；当前招聘状态请向企业确认。集团公开官网待核实。",
-      "auditNote": "集团人力资源部2025-08-10公告原文，兰州大学官方就业网留存。原文报名时间为长期（根据报名情况分批组织）；是否仍招请向企业确认。集团公开主官网未核实。"
+      "auditNote": "集团人力资源部2025-08-10公告原文，兰州大学官方就业网留存。原文报名时间为长期（根据报名情况分批组织）；是否仍招请向企业确认。集团公开主官网未核实。",
+      "established": "2025",
+      "establishedSource": "https://wap.sasac.gov.cn/n2588035/c34016456/content.html",
+      "establishedNote": "国资委2025年公告组建；公告日不直接作为注册日期",
+      "socialRecruitment": "https://job.lzu.edu.cn/ueditor/upload/file/20250815/1755252189844046569.pdf"
     },
     {
       "id": 23,
@@ -224,7 +268,10 @@
       "source": "http://www.ceic.com",
       "recruitmentLabel": "人才招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "2017-11-28",
+      "establishedSource": "https://www.chnenergy.com.cn/gjnyjtww/chnjcxw/chnlist_7.shtml",
+      "establishedNote": "集团官网披露挂牌成立日期"
     },
     {
       "id": 59,
@@ -238,7 +285,10 @@
       "source": "http://www.chinacoal.com/",
       "recruitmentLabel": "招聘平台",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1982",
+      "establishedSource": "https://zcgl.chinacoal.com/col/col2205/art/2026/art_64327dcbe46b42f4ab745b010ef6a249.html",
+      "establishedNote": "集团官网称前身成立年份，2009年改制更名"
     },
     {
       "id": 94,
@@ -252,7 +302,10 @@
       "source": "http://www.cgnpc.com.cn/",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1994-09-29",
+      "establishedSource": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/201610/004003_20161031_K5FJ.pdf",
+      "establishedNote": "集团债券募集说明书；官网称1994年9月注册"
     },
     {
       "id": 8,
@@ -266,7 +319,10 @@
       "source": "http://www.cetc.com.cn/",
       "recruitmentLabel": "人才招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "2002-02-25",
+      "establishedSource": "https://static.cninfo.com.cn/finalpage/2023-08-31/1217733162.PDF",
+      "establishedNote": "登记成立日期；集团挂牌成立为2002年3月"
     },
     {
       "id": 24,
@@ -280,7 +336,11 @@
       "source": "https://wejob.chinatelecom.com.cn/wt/TELE/web/index?brandCode=1",
       "recruitmentLabel": "中国电信招聘",
       "note": "",
-      "auditNote": "集团自有域名招聘服务，含校园招聘入口和运营主体说明。"
+      "auditNote": "集团自有域名招聘服务，含校园招聘入口和运营主体说明。",
+      "established": "2000-05-17",
+      "establishedSource": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/3808104895521911845941843.pdf",
+      "establishedNote": "集团重组成立日期，非历史前身日期",
+      "campusRecruitment": "https://wejob.chinatelecom.com.cn/wt/TELE/web/index?brandCode=1"
     },
     {
       "id": 25,
@@ -294,7 +354,11 @@
       "source": "https://www.chinaunicom.com.cn/46/menu01/528/column06",
       "recruitmentLabel": "校园招聘",
       "note": "",
-      "auditNote": "集团官网校园招聘栏目提供智联投递入口。"
+      "auditNote": "集团官网校园招聘栏目提供智联投递入口。",
+      "established": "2009-01-06",
+      "establishedSource": "https://static.cninfo.com.cn/finalpage/2010-03-25/57726854.PDF",
+      "establishedNote": "现集团在原联通与原网通基础上组建日期",
+      "campusRecruitment": "https://www.chinaunicom.com.cn/46/menu01/528/column06"
     },
     {
       "id": 26,
@@ -308,7 +372,12 @@
       "source": "https://job.10086.cn/?appTab=1",
       "recruitmentLabel": "中国移动招聘",
       "note": "",
-      "auditNote": "集团自有域名统一招聘网站，含校招、社招及实习生招聘。"
+      "auditNote": "集团自有域名统一招聘网站，含校招、社招及实习生招聘。",
+      "established": "1999-07-22",
+      "establishedSource": "https://www.chinamobileltd.com/sc/file/view.php?id=327259",
+      "establishedNote": "集团成立日期，非香港上市公司日期",
+      "campusRecruitment": "https://job.10086.cn/",
+      "socialRecruitment": "https://job.10086.cn/"
     },
     {
       "id": 27,
@@ -322,7 +391,12 @@
       "source": "https://cscnrczp.zhiye.com/jobs",
       "recruitmentLabel": "中国星网招聘",
       "note": "招聘平台提供校园招聘和社会招聘；集团公开官网待核实。",
-      "auditNote": "招聘平台可见高层次人才、社会招聘和校园招聘；集团公开主官网未核实。"
+      "auditNote": "招聘平台可见高层次人才、社会招聘和校园招聘；集团公开主官网未核实。",
+      "established": "2021",
+      "establishedSource": "https://wap.sasac.gov.cn/n2588045/n27271785/n27271802/c18286531/content.html",
+      "establishedNote": "国资委公告2021年组建",
+      "campusRecruitment": "https://cscnrczp.zhiye.com/jobs",
+      "socialRecruitment": "https://cscnrczp.zhiye.com/jobs"
     },
     {
       "id": 28,
@@ -336,7 +410,12 @@
       "source": "http://www.cndg.com/",
       "recruitmentLabel": "社会招聘",
       "note": "",
-      "auditNote": "集团官网同时提供校园招聘入口 https://cndg.iguopin.com/job1 。"
+      "auditNote": "集团官网同时提供校园招聘入口 https://cndg.iguopin.com/job1 。",
+      "established": "2026",
+      "establishedSource": "https://wap.sasac.gov.cn/n2588035/c36071870/content.html",
+      "establishedNote": "国资委公告2026年组建；9月登记、10月挂牌资料口径不同",
+      "campusRecruitment": "https://cndg.iguopin.com/job1",
+      "socialRecruitment": "https://cndg.iguopin.com/job2"
     },
     {
       "id": 29,
@@ -350,7 +429,10 @@
       "source": "http://www.cec.com.cn/",
       "recruitmentLabel": "人才招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1989",
+      "establishedSource": "https://www.cec.com.cn/%E9%9B%86%E5%9B%A2%E7%AE%80%E4%BB%8B",
+      "establishedNote": "集团官网成立时间1989年5月"
     },
     {
       "id": 79,
@@ -364,7 +446,10 @@
       "source": "https://www.cict.com/p1/JoinRecruitment.jhtml",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "2018",
+      "establishedSource": "https://www.gohigh.com.cn/aboutus/",
+      "establishedNote": "2018年6月重组为中国信息通信科技集团"
     },
     {
       "id": 88,
@@ -378,7 +463,11 @@
       "source": "https://holdings.travelsky.cn/travelsky/rlzy/rczp/shzp/A069009003002Gone1.html",
       "recruitmentLabel": "社会招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "2002",
+      "establishedSource": "https://www.caac.gov.cn/PHONE/GYMH/MHGK/BZQY/201508/t20150828_988.html",
+      "establishedNote": "2002年10月正式组建",
+      "socialRecruitment": "https://holdings.travelsky.cn/travelsky/rlzy/rczp/shzp/A069009003002Gone1.html"
     },
     {
       "id": 2,
@@ -392,7 +481,10 @@
       "source": "https://jobcareer.sdu.edu.cn/eweb/jygl/index.so?id=9WoUGoAHRACdePtRjfpYXH&modcode=jygl_zpxxck&subsyscode=zpfw&type=ssoViewZpxx",
       "recruitmentLabel": "中国航天人才网",
       "note": "",
-      "auditNote": "集团直属研究院在高校官方就业网发布的招聘简章提供此入口。"
+      "auditNote": "集团直属研究院在高校官方就业网发布的招聘简章提供此入口。",
+      "established": "1999-07-01",
+      "establishedSource": "https://www.spacechina.com/n25/n1995122/n1997293/n2014857/",
+      "establishedNote": "集团官网说明的集团成立日期"
     },
     {
       "id": 3,
@@ -406,7 +498,10 @@
       "source": "http://www.casic.com.cn/",
       "recruitmentLabel": "人才招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1999",
+      "establishedSource": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-12-27/6610269f-d0ea-4cb4-8616-8628a2eae685.PDF",
+      "establishedNote": "公开公告说明1999年7月成立前身公司，2001年更名；仅保留年份"
     },
     {
       "id": 4,
@@ -420,7 +515,12 @@
       "source": "https://wap.sasac.gov.cn/n2588035/n2588325/n2588350/c36061289/content.html",
       "recruitmentLabel": "集团招聘平台",
       "note": "",
-      "auditNote": "国资委转载集团2026年审计派出机构社招、校招公告明确提供此报名平台。"
+      "auditNote": "国资委转载集团2026年审计派出机构社招、校招公告明确提供此报名平台。",
+      "established": "2008-11-06",
+      "establishedSource": "https://static.cninfo.com.cn/finalpage/2011-01-26/58948711.PDF",
+      "establishedNote": "集团注册成立日期",
+      "campusRecruitment": "https://avic-hr.zhiye.com/",
+      "socialRecruitment": "https://avic-hr.zhiye.com/"
     },
     {
       "id": 5,
@@ -434,7 +534,10 @@
       "source": "https://www.cssc.net.cn/n9/n63/index.html",
       "recruitmentLabel": "人才招聘",
       "note": "",
-      "auditNote": "集团长期人才招聘栏目；原名录链接 csic.com.cn 可替换为现集团官网。"
+      "auditNote": "集团长期人才招聘栏目；原名录链接 csic.com.cn 可替换为现集团官网。",
+      "established": "2019-11-08",
+      "establishedSource": "https://static.cninfo.com.cn/finalpage/2023-03-31/1216276277.PDF",
+      "establishedNote": "集团注册成立日期；挂牌时间为11月26日"
     },
     {
       "id": 6,
@@ -448,7 +551,12 @@
       "source": "https://norincogroupzhaopin.zhiye.com/",
       "recruitmentLabel": "兵器工业招聘网",
       "note": "",
-      "auditNote": "品牌招聘平台首页含校园招聘、社会招聘和集团官网链接。"
+      "auditNote": "品牌招聘平台首页含校园招聘、社会招聘和集团官网链接。",
+      "established": "1999-06-29",
+      "establishedSource": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2024-03-22/240803_20240322_6OQT.pdf",
+      "establishedNote": "集团成立日期",
+      "campusRecruitment": "https://norincogroupzhaopin.zhiye.com/",
+      "socialRecruitment": "https://norincogroupzhaopin.zhiye.com/"
     },
     {
       "id": 7,
@@ -462,7 +570,10 @@
       "source": "https://www.csgc.com.cn/",
       "recruitmentLabel": "人才招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1999-06-29",
+      "establishedSource": "https://static.cninfo.com.cn/finalpage/2025-04-30/1223438422.pdf",
+      "establishedNote": "集团成立日期"
     },
     {
       "id": 9,
@@ -476,7 +587,10 @@
       "source": "http://www.aecc.cn/",
       "recruitmentLabel": "人才招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "2016-05-31",
+      "establishedSource": "https://static.cninfo.com.cn/finalpage/2026-04-02/1225072838.PDF",
+      "establishedNote": "集团成立日期"
     },
     {
       "id": 55,
@@ -490,7 +604,10 @@
       "source": "http://www.comac.cc/",
       "recruitmentLabel": "招聘平台",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "2008-05-11",
+      "establishedSource": "https://www.comac.cc/gywm/gsjj/",
+      "establishedNote": "查看成立时间来源"
     },
     {
       "id": 30,
@@ -504,7 +621,12 @@
       "source": "https://faw-zhaopin.hotjob.cn/QA/",
       "recruitmentLabel": "中国一汽招聘",
       "note": "",
-      "auditNote": "中国一汽品牌招聘平台应聘指南，可从顶部进入校园招聘和社会招聘。"
+      "auditNote": "中国一汽品牌招聘平台应聘指南，可从顶部进入校园招聘和社会招聘。",
+      "established": "1953-07-15",
+      "establishedSource": "https://disc.static.szse.cn/disc/disk03/finalpage/2025-09-27/b28f2681-0e0a-4396-bfff-95fb59fec3a5.PDF",
+      "establishedNote": "公司披露历史沿革中国一汽成立日期",
+      "campusRecruitment": "https://faw-zhaopin.hotjob.cn/QA/",
+      "socialRecruitment": "https://faw-zhaopin.hotjob.cn/QA/"
     },
     {
       "id": 31,
@@ -518,7 +640,11 @@
       "source": "http://www.dfmc.com.cn/",
       "recruitmentLabel": "社会招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1969",
+      "establishedSource": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/3498925589493574.pdf",
+      "establishedNote": "披露前身第二汽车制造厂1969年成立，2017年更名为现名",
+      "socialRecruitment": "https://app.mokahr.com/social-recruitment/dfmc/168368#/"
     },
     {
       "id": 32,
@@ -532,7 +658,10 @@
       "source": "http://www.cfhi.com/",
       "recruitmentLabel": "人才招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1954",
+      "establishedSource": "https://app.cnstock.com/zzb/zgzqb/html/2026-04/30/nw.D110000zgzqb_20260430_2-B525.htm",
+      "establishedNote": "集团始建年份；非集团公司法人登记日"
     },
     {
       "id": 33,
@@ -546,7 +675,10 @@
       "source": "https://wap.sasac.gov.cn/n2588035/n2588325/n2588350/c30414550/content.html",
       "recruitmentLabel": "国机招聘平台",
       "note": "",
-      "auditNote": "国资委转载的集团总部招聘公告明确提供该PC端官网。"
+      "auditNote": "国资委转载的集团总部招聘公告明确提供该PC端官网。",
+      "established": "1997",
+      "establishedSource": "https://www.sinomach.com.cn/gygj/qywh/",
+      "establishedNote": "集团官网成立时间1997年1月"
     },
     {
       "id": 34,
@@ -560,7 +692,11 @@
       "source": "http://www.harbin-electric.com/",
       "recruitmentLabel": "社会招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1994-10-06",
+      "establishedSource": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202409/RAS_202409_0215002E4187D670EE494D90DCE234F420B106.pdf",
+      "establishedNote": "上市公司公告披露集团成立日期",
+      "socialRecruitment": "http://www.harbin-electric.com/zxns/shzp.htm"
     },
     {
       "id": 35,
@@ -574,7 +710,11 @@
       "source": "http://www.dongfang.com/",
       "recruitmentLabel": "社会招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1958",
+      "establishedSource": "https://www.cscec.com/ztzl_new/ggsnxd/tszs/202103/3282698.html",
+      "establishedNote": "中国建筑转载国资委文章称东方电气集团成立于1958年；工商成立日期可能不同。",
+      "socialRecruitment": "http://www.dongfang.com/zxns/shzp.htm"
     },
     {
       "id": 60,
@@ -616,7 +756,10 @@
       "source": "http://www.crrcgc.cc/",
       "recruitmentLabel": "招聘平台",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "2015-09-28",
+      "establishedSource": "https://www.csrc.gov.cn/beijing/c105538/c1257657/content.shtml",
+      "establishedNote": "中国中车集团公司成立日，非上市公司成立日"
     },
     {
       "id": 74,
@@ -630,7 +773,10 @@
       "source": "https://changan.zhiye.com/campus?c=1",
       "recruitmentLabel": "长安汽车招聘",
       "note": "提供旗下长安汽车招聘入口；集团总部与其他成员单位以各自公告为准。",
-      "auditNote": "该入口为旗下长安汽车招聘，非集团总部统一招聘平台。"
+      "auditNote": "该入口为旗下长安汽车招聘，非集团总部统一招聘平台。",
+      "established": "2025-07-27",
+      "establishedSource": "https://static.cninfo.com.cn/finalpage/2025-12-30/1224906438.PDF",
+      "establishedNote": "集团成立日期；集团官网表述为2025年7月"
     },
     {
       "id": 75,
@@ -644,7 +790,10 @@
       "source": "http://www.crsc.cn/1091.html",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1953",
+      "establishedSource": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0325/2026032500056_c.pdf",
+      "establishedNote": "中国通号年报称集团始建于1953年"
     },
     {
       "id": 87,
@@ -658,7 +807,10 @@
       "source": "https://cujiuye.iguopin.com/",
       "recruitmentLabel": "国聘招聘主页",
       "note": "国聘企业招聘主页，包含该企业发布的招聘岗位与公告。",
-      "auditNote": "已从国资央企招聘平台“用人单位矩阵”点击并核对企业名称；主页含本单位和下级单位职位。"
+      "auditNote": "已从国资央企招聘平台“用人单位矩阵”点击并核对企业名称；主页含本单位和下级单位职位。",
+      "established": "1997-01-08",
+      "establishedSource": "https://static.cninfo.com.cn/finalpage/2012-05-17/61008082.PDF",
+      "establishedNote": "公司公告列设立时间；2009年更名"
     },
     {
       "id": 97,
@@ -672,7 +824,10 @@
       "source": "http://www.cee-group.cn/",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "2021-09-23",
+      "establishedSource": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-04-29/240402_20260429_QT27.pdf",
+      "establishedNote": "集团2026年报告列登记注册日期"
     },
     {
       "id": 36,
@@ -686,7 +841,8 @@
       "source": "https://campus.51job.com/ansteel2026/job.html",
       "recruitmentLabel": "2026届校园招聘",
       "note": "2026届校园招聘专栏；适用届别与当前招聘状态以企业公告为准。",
-      "auditNote": "鞍钢集团企业品牌招聘平台，覆盖鞍山钢铁、攀钢、本钢、矿业、北京院等。当前页面为2026届专栏，未核实2027届统一平台，不能据此认定当前仍在招聘。集团在吉林大学官方就业网发布的2026简章亦明确采用前程无忧平台：https://jdjyw.jlu.edu.cn/portal/jyzp/recruit/details?id=861b348f8d014f3591f595b2d704bd59 。"
+      "auditNote": "鞍钢集团企业品牌招聘平台，覆盖鞍山钢铁、攀钢、本钢、矿业、北京院等。当前页面为2026届专栏，未核实2027届统一平台，不能据此认定当前仍在招聘。集团在吉林大学官方就业网发布的2026简章亦明确采用前程无忧平台：https://jdjyw.jlu.edu.cn/portal/jyzp/recruit/details?id=861b348f8d014f3591f595b2d704bd59 。",
+      "campusRecruitment": "https://campus.51job.com/ansteel2026/job.html"
     },
     {
       "id": 37,
@@ -700,7 +856,12 @@
       "source": "https://baowugroup-zhaopin.51job.com/",
       "recruitmentLabel": "宝武招聘平台",
       "note": "",
-      "auditNote": "企业品牌招聘平台，包含社会招聘、校园招聘和信息公开。"
+      "auditNote": "企业品牌招聘平台，包含社会招聘、校园招聘和信息公开。",
+      "established": "2016-12-01",
+      "establishedSource": "https://res.baowugroup.com/attach/2021/08/12/5e26cf24e7ad4c0f88698e220362fcce.pdf",
+      "establishedNote": "集团重组揭牌",
+      "campusRecruitment": "https://baowugroup-zhaopin.51job.com/",
+      "socialRecruitment": "https://baowugroup-zhaopin.51job.com/"
     },
     {
       "id": 38,
@@ -714,7 +875,12 @@
       "source": "http://www.cmr-co.com/joinUs",
       "recruitmentLabel": "加入我们",
       "note": "官网提供社会招聘与校园招聘分类。",
-      "auditNote": "直接抓取集团官网页面，包含社会招聘和校园招聘分类及2026年招聘公告；路由也由官网Nuxt脚本确认。"
+      "auditNote": "直接抓取集团官网页面，包含社会招聘和校园招聘分类及2026年招聘公告；路由也由官网Nuxt脚本确认。",
+      "established": "2022",
+      "establishedSource": "https://wap.sasac.gov.cn/n2588030/n2588924/c25601477/content.html",
+      "establishedNote": "国资委公告组建年份",
+      "campusRecruitment": "http://www.cmr-co.com/joinUs",
+      "socialRecruitment": "http://www.cmr-co.com/joinUs"
     },
     {
       "id": 39,
@@ -728,7 +894,10 @@
       "source": "https://www.chinalco.com.cn/rlzy/rlzy_zpxx/202601/P020260122327572473192.pdf",
       "recruitmentLabel": "招聘信息",
       "note": "",
-      "auditNote": "集团官方招聘附件位于该栏目；栏目页面本轮有反爬验证。"
+      "auditNote": "集团官方招聘附件位于该栏目；栏目页面本轮有反爬验证。",
+      "established": "2001",
+      "establishedSource": "https://zlwebsite.chinalco.com.cn/pub/zljt/gywm/gywm_gsjs/",
+      "establishedNote": "集团官网所述成立年份"
     },
     {
       "id": 46,
@@ -742,7 +911,10 @@
       "source": "http://www.minmetals.com.cn/",
       "recruitmentLabel": "人才招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1950",
+      "establishedSource": "https://www.minmetals.com.cn/gywk_7233/qygg/",
+      "establishedNote": "查看成立时间来源"
     },
     {
       "id": 62,
@@ -756,7 +928,10 @@
       "source": "http://www.cisri.com.cn/",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1952",
+      "establishedSource": "https://www.cisri.com.cn/gywm/jtjj.htm",
+      "establishedNote": "官网称前身钢铁研究总院创建于1952年，2006年更名重组"
     },
     {
       "id": 65,
@@ -770,7 +945,10 @@
       "source": "https://wap.sasac.gov.cn/n2588035/n2588325/c33221945/content.html",
       "recruitmentLabel": "招聘平台",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1984",
+      "establishedSource": "https://www.cbminfo.com/BMI/zx/_465605/3235129/index.html",
+      "establishedNote": "集团官网资料称集团于1984年成立"
     },
     {
       "id": 66,
@@ -784,7 +962,10 @@
       "source": "http://www.cnmc.com.cn/",
       "recruitmentLabel": "招聘平台",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1983",
+      "establishedSource": "https://pgma.cnmc.com.cn/cnmc/gywm/jtjj/A002002001index_1.html",
+      "establishedNote": "企业官网自述成立年份"
     },
     {
       "id": 67,
@@ -798,7 +979,10 @@
       "source": "https://www.regcc.cn",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "2021-12-23",
+      "establishedSource": "https://wap.sasac.gov.cn/n2588025/n2588139/c25577629/content.html",
+      "establishedNote": "查看成立时间来源"
     },
     {
       "id": 68,
@@ -812,7 +996,10 @@
       "source": "http://www.crrg.com.cn",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "2024-10-18",
+      "establishedSource": "https://wap.sasac.gov.cn/n2588025/n2588139/c33709787/content.html",
+      "establishedNote": "集团挂牌成立"
     },
     {
       "id": 69,
@@ -826,7 +1013,10 @@
       "source": "http://www.grinm.com/",
       "recruitmentLabel": "招聘平台",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1952",
+      "establishedSource": "https://wap.sasac.gov.cn/n2588035/n2588325/c12206755/content.html",
+      "establishedNote": "原北京有色金属研究总院成立于1952年11月，2022年更名"
     },
     {
       "id": 70,
@@ -840,7 +1030,10 @@
       "source": "http://www.bgrimm.com/",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1956",
+      "establishedSource": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=12534916&stockid=300073",
+      "establishedNote": "上市公司半年报称矿冶集团组建于1956年"
     },
     {
       "id": 85,
@@ -854,7 +1047,10 @@
       "source": "http://www.cmgb.com.cn/",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1952",
+      "establishedSource": "https://www.cmgb.com.cn/category/dwjj.html",
+      "establishedNote": "官网单位简介"
     },
     {
       "id": 86,
@@ -868,7 +1064,10 @@
       "source": "http://www.ccgc.cn/",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1953",
+      "establishedSource": "https://wap.sasac.gov.cn/n2588035/n2588325/c33577164/content.html",
+      "establishedNote": "国资委官方招聘公告"
     },
     {
       "id": 93,
@@ -882,7 +1081,10 @@
       "source": "https://www.chinagoldgroup.com/",
       "recruitmentLabel": "招聘平台",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "2003-01-14",
+      "establishedSource": "https://report.ccxi.com.cn/media/cm/1339137.pdf",
+      "establishedNote": "评级报告称集团成立于2003年1月14日"
     },
     {
       "id": 48,
@@ -896,7 +1098,11 @@
       "source": "http://www.cscec.com/",
       "recruitmentLabel": "社会招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1982-06-11",
+      "establishedSource": "https://www.cscec.com/zgjz_new/gyzj/fzlc_new/fzlc1982/201712/2591712.html",
+      "establishedNote": "集团官网所述前身组建日期",
+      "socialRecruitment": "http://www.cscec.com/rlzy_new/rczp/"
     },
     {
       "id": 50,
@@ -910,7 +1116,10 @@
       "source": "https://www.nsbdjhsw.com.cn/show-2611.html",
       "recruitmentLabel": "招聘平台",
       "note": "集团招聘平台，招聘安排以最新公告为准。",
-      "auditNote": "集团下属江汉水网公司官网面试公告明确链接该招聘考试系统；平台目前可访问，具体岗位以最新公告为准。"
+      "auditNote": "集团下属江汉水网公司官网面试公告明确链接该招聘考试系统；平台目前可访问，具体岗位以最新公告为准。",
+      "established": "2020-10-23",
+      "establishedSource": "https://app.www.gov.cn/govdata/gov/202010/23/464096/article.html",
+      "establishedNote": "成立大会日期"
     },
     {
       "id": 56,
@@ -938,7 +1147,10 @@
       "source": "https://www.ciecc.com.cn/col/col1627/index.html",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1982",
+      "establishedSource": "https://www.ciecc.com.cn/art/2022/6/17/art_1589_80893.html",
+      "establishedNote": "企业官网自述成立年份"
     },
     {
       "id": 63,
@@ -952,7 +1164,10 @@
       "source": "https://wecruit.hotjob.cn/SU69294dabe3842960d1a72594/pb/index.html",
       "recruitmentLabel": "招聘平台",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1984",
+      "establishedSource": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202210/022078_20221026_8PW3.pdf",
+      "establishedNote": "公司财报称1984年5月成立"
     },
     {
       "id": 72,
@@ -966,7 +1181,10 @@
       "source": "http://www.cabr.cn/",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1953",
+      "establishedSource": "https://ggzy.qingdao.gov.cn/PortalQDManage/ShareResources/CorpInfo?corpGuid=19ab06e8-dc4a-47ac-9143-7eb4daadc4b3",
+      "establishedNote": "招标系统中建研院简介称成立于1953年"
     },
     {
       "id": 76,
@@ -1008,7 +1226,10 @@
       "source": "https://portal-oss.zhiye.com/107092/resource/4d5464e1-9ead-4edd-9eed-fb259e1c3b5d.html",
       "recruitmentLabel": "招聘平台",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "2005",
+      "establishedSource": "https://www.cac.gov.cn/2017-09/13/c_1121651576.htm",
+      "establishedNote": "中国交建以新设合并方式于2005年组建"
     },
     {
       "id": 84,
@@ -1036,7 +1257,10 @@
       "source": "http://www.powerchina.cn",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "2011-09-29",
+      "establishedSource": "https://www.sse.com.cn/disclosure/bond/announcement/corporate/c/2696247198680706.pdf",
+      "establishedNote": "集团财务报表附注列挂牌成立日期"
     },
     {
       "id": 91,
@@ -1050,7 +1274,10 @@
       "source": "https://www.ceec.net.cn/art/2026/5/11/art_11018_2539409.html",
       "recruitmentLabel": "高层次人才招聘",
       "note": "高层次人才专项招聘公告，具体条件与截止日期以公告为准。",
-      "auditNote": "为高层次人才专项招聘公告，非统一职位列表；请以公告要求及截止时间为准。"
+      "auditNote": "为高层次人才专项招聘公告，非统一职位列表；请以公告要求及截止时间为准。",
+      "established": "2011-09-29",
+      "establishedSource": "https://www.ceec.net.cn/col/col52912/index.html",
+      "establishedNote": "集团官网直接列成立日期"
     },
     {
       "id": 92,
@@ -1064,7 +1291,11 @@
       "source": "https://china-an.iguopin.com/",
       "recruitmentLabel": "社会招聘平台",
       "note": "集团社会招聘平台，岗位与招聘安排以平台公告为准。",
-      "auditNote": "已通过嵌入浏览器核对页面标题“中国安能建设集团有限公司社会招聘平台”。"
+      "auditNote": "已通过嵌入浏览器核对页面标题“中国安能建设集团有限公司社会招聘平台”。",
+      "established": "2018",
+      "establishedSource": "https://www.mem.gov.cn/shjyfw/dwfc/202112/t20211221_405363.shtml",
+      "establishedNote": "应急管理部称集团成立于2018年",
+      "socialRecruitment": "https://china-an.iguopin.com/"
     },
     {
       "id": 40,
@@ -1078,7 +1309,12 @@
       "source": "https://career.nankai.edu.cn/correcruit/content/id/119098.html",
       "recruitmentLabel": "校园招聘",
       "note": "校园招聘专栏；社会招聘可关注集团官网相关公告。",
-      "auditNote": "集团在南开大学官方就业网发布的2027届校园招聘公告列明该招聘专栏。"
+      "auditNote": "集团在南开大学官方就业网发布的2027届校园招聘公告列明该招聘专栏。",
+      "established": "2016-02-18",
+      "establishedSource": "https://info.chineseshipping.com.cn/cninfo/News/201602/t20160218_1268256.shtml",
+      "establishedNote": "集团发布的挂牌成立日期；工商登记日期另有口径",
+      "campusRecruitment": "https://coscoshipping.iguopin.com/",
+      "socialRecruitment": "https://coscoshipping.iguopin.com/"
     },
     {
       "id": 41,
@@ -1092,7 +1328,10 @@
       "source": "https://www.airchinagroup.com/cnah/",
       "recruitmentLabel": "人才招聘",
       "note": "",
-      "auditNote": "集团官网人才招聘直接链接该平台。"
+      "auditNote": "集团官网人才招聘直接链接该平台。",
+      "established": "2002",
+      "establishedSource": "https://www.airchinagroup.com/cnah/images/xxgk/xxgkml/gyzbyy/2024/12/26/261102105446982EAABD975188792D2F2F4F69F8.pdf",
+      "establishedNote": "官网财报称2002年10月成立"
     },
     {
       "id": 42,
@@ -1106,7 +1345,10 @@
       "source": "http://www.ceairgroup.com/",
       "recruitmentLabel": "人才招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1988-06-25",
+      "establishedSource": "https://wap.sasac.gov.cn/n2588025/n2649281/n10784966/c11548020/content.html",
+      "establishedNote": "查看成立时间来源"
     },
     {
       "id": 43,
@@ -1120,7 +1362,10 @@
       "source": "https://www.csairgroup.cn/cn/",
       "recruitmentLabel": "人才招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1991-02-01",
+      "establishedSource": "https://www.csairgroup.cn/cn/xxgk9/xxgkml46/gyzbyy21/359922/61ce1527db8746a3bc403523df9f1dc7/%E4%B8%AD%E5%9B%BD%E5%8D%97%E6%96%B9%E8%88%AA%E7%A9%BA%E9%9B%86%E5%9B%A2%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B82020%E5%B9%B4%E5%BA%A6%E8%B4%A2%E5%8A%A1%E6%8A%A5%E5%91%8A.pdf",
+      "establishedNote": "公司财报所述前身成立，2002年重组；集团官网另一页面的1995年日期对应股份公司，请勿混用。"
     },
     {
       "id": 89,
@@ -1134,7 +1379,10 @@
       "source": "https://www.casc.com.cn/cas/?cat=45",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "2002",
+      "establishedSource": "https://www.casc.com.cn/cas/?page_id=4173",
+      "establishedNote": "2002年10月正式组建；前身公司成立于1980年"
     },
     {
       "id": 98,
@@ -1148,7 +1396,10 @@
       "source": "https://www.chinalogisticsgroup.com.cn/",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1987-08-26",
+      "establishedSource": "https://www.chinalogisticsgroup.com.cn/zh-cn/disclosure/notice/index.shtml",
+      "establishedNote": "官网法人信息列成立日期；2021年12月重组挂牌"
     },
     {
       "id": "other-1",
@@ -1167,7 +1418,10 @@
       "note": "",
       "aliases": "国铁集团 中国铁路",
       "reference": "补充收录",
-      "auditNote": "招聘网自述为国铁集团及所属单位发布毕业生招聘公告的官方网站。"
+      "auditNote": "招聘网自述为国铁集团及所属单位发布毕业生招聘公告的官方网站。",
+      "established": "2019-06-18",
+      "establishedSource": "https://www.br-cn.com/static/content/news/xwjj/2019-06-18/887297643242323968.html",
+      "establishedNote": "国铁集团公司制改制成立，前身另有历史"
     },
     {
       "id": "other-2",
@@ -1186,7 +1440,10 @@
       "note": "集团官网信息公告栏目，包含集团及所属单位的招聘公告。",
       "aliases": "",
       "reference": "补充收录",
-      "auditNote": "集团官网的信息公告栏目，含集团及所属单位招聘公告。2027 校招另有 chinapost2027.zhaopin.com；其集团公告报名截止为 2026-10-31，保留通用栏目更合适。"
+      "auditNote": "集团官网的信息公告栏目，含集团及所属单位招聘公告。2027 校招另有 chinapost2027.zhaopin.com；其集团公告报名截止为 2026-10-31，保留通用栏目更合适。",
+      "established": "2007-01-29",
+      "establishedSource": "https://www.chinapost.com.cn/cn/album/1909/15602-1.htm",
+      "establishedNote": "中国邮政集团公司成立时间"
     },
     {
       "id": 45,
@@ -1200,7 +1457,11 @@
       "source": "https://scc.shzu.edu.cn/campus/view/id/1118123",
       "recruitmentLabel": "校园招聘",
       "note": "",
-      "auditNote": "集团在高校官方就业网发布的2027届校园招聘简章提供此入口。"
+      "auditNote": "集团在高校官方就业网发布的2027届校园招聘简章提供此入口。",
+      "established": "1949",
+      "establishedSource": "https://www.cofco.com/uploads/soft/250618/1-25061Q33A0.pdf",
+      "establishedNote": "企业官网自述成立年份",
+      "campusRecruitment": "https://campus.51job.com/cofco"
     },
     {
       "id": 49,
@@ -1214,7 +1475,10 @@
       "source": "https://www.sinograin.com.cn/list4.html?navId=37&navPid=7&pgnow=2",
       "recruitmentLabel": "招聘公告",
       "note": "",
-      "auditNote": "集团官网加入我们下的招聘公告栏目。"
+      "auditNote": "集团官网加入我们下的招聘公告栏目。",
+      "established": "2000-05-18",
+      "establishedSource": "https://www.sinograin.com.cn/speech_qyjj.html",
+      "establishedNote": "查看成立时间来源"
     },
     {
       "id": 64,
@@ -1228,7 +1492,10 @@
       "source": "http://www.chinasalt.com.cn/",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1950",
+      "establishedSource": "https://ecp.chinasalt.com.cn/",
+      "establishedNote": "集团官网所述创立年份"
     },
     {
       "id": 80,
@@ -1242,7 +1509,10 @@
       "source": "https://cujiuye.iguopin.com/",
       "recruitmentLabel": "国聘招聘主页",
       "note": "国聘企业招聘主页，包含该企业发布的招聘岗位与公告。",
-      "auditNote": "已从国资央企招聘平台“用人单位矩阵”点击并核对企业名称；主页含本单位和下级单位职位。"
+      "auditNote": "已从国资央企招聘平台“用人单位矩阵”点击并核对企业名称；主页含本单位和下级单位职位。",
+      "established": "2004",
+      "establishedSource": "https://www.cnadc.com.cn/u/cms/www/202504/22173105j5k1.pdf",
+      "establishedNote": "官网社会责任报告称成立于2004年"
     },
     {
       "id": 81,
@@ -1256,7 +1526,10 @@
       "source": "https://www.cfgc.cn/",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1996",
+      "establishedSource": "https://sjj.huaibei.gov.cn/sjggjjd/909123.html",
+      "establishedNote": "审计署2018年审计结果：中林集团成立于1996年"
     },
     {
       "id": "other-4",
@@ -1289,7 +1562,10 @@
       "source": "http://www.sinopharm.com/",
       "recruitmentLabel": "招聘平台",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1987-03-26",
+      "establishedSource": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202405/041992_20240521_RUUM.pdf",
+      "establishedNote": "上交所披露的中国医药投资公司募集说明书：国药集团总公司成立于1987-03-26，2017年变更为现名。"
     },
     {
       "id": 10,
@@ -1317,7 +1593,10 @@
       "source": "https://www.sinochem.com/zhjt/jrzh/zpjd/shzpzn/A044010005001Gone1.html",
       "recruitmentLabel": "中化招聘平台",
       "note": "",
-      "auditNote": "集团官方社会招聘指南明确要求进入job.sinochem.com。"
+      "auditNote": "集团官方社会招聘指南明确要求进入job.sinochem.com。",
+      "established": "2021-05-08",
+      "establishedSource": "https://wap.sasac.gov.cn/n4470048/n13461446/n15390485/n15769618/c20154014/content.html",
+      "establishedNote": "联合重组后揭牌成立"
     },
     {
       "id": 47,
@@ -1331,7 +1610,10 @@
       "source": "http://www.gt.cn/",
       "recruitmentLabel": "人才招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1998",
+      "establishedSource": "https://www.gt.cn/",
+      "establishedNote": "查看成立时间来源"
     },
     {
       "id": 51,
@@ -1345,7 +1627,10 @@
       "source": "https://wap.sasac.gov.cn/n2588035/n2588325/c28651284/content.html",
       "recruitmentLabel": "招聘平台",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1995-05-05",
+      "establishedSource": "https://www.sdic.com.cn/cn/rootimages/2019/07/02/sdic2018.pdf",
+      "establishedNote": "查看成立时间来源"
     },
     {
       "id": 52,
@@ -1359,7 +1644,10 @@
       "source": "https://cmhk.zhiye.com/custom/sh?hideAll=true",
       "recruitmentLabel": "招聘平台",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1872-12-26",
+      "establishedSource": "https://1872.cmhk.com/UpLoadFiles/shuyuan/2021030414521558.pdf",
+      "establishedNote": "集团官网记录的招商局前身创立时间"
     },
     {
       "id": 53,
@@ -1387,7 +1675,10 @@
       "source": "http://www.cctgroup.com.cn/cctgroup/rlzy/index.html",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1992",
+      "establishedSource": "https://www.cctgroup.com.cn/cctgroup/594939/jtjj/index.html",
+      "establishedNote": "企业官网自述成立年份"
     },
     {
       "id": 71,
@@ -1401,7 +1692,11 @@
       "source": "https://career.nankai.edu.cn/correcruit/content/id/119760.html",
       "recruitmentLabel": "2027届校园招聘",
       "note": "2027届校园招聘专栏，含集团成员单位岗位。",
-      "auditNote": "集团在南开大学官方就业平台于2026-10-16发布的招聘简章指定该网申入口。"
+      "auditNote": "集团在南开大学官方就业平台于2026-10-16发布的招聘简章指定该网申入口。",
+      "established": "1987",
+      "establishedSource": "https://www.ciicts.com.cn/ciicts/gywm2438/jtjj/index.html",
+      "establishedNote": "集团官网集团简介称成立于1987年",
+      "campusRecruitment": "https://hd.ciiczhaopin.com/ciic2027"
     },
     {
       "id": 83,
@@ -1415,7 +1710,10 @@
       "source": "http://www.poly.com.cn/",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1992",
+      "establishedSource": "https://www.mem.gov.cn/gk/sgcc/tbzdsgdcbg/2013/201309/t20130909_245227.shtml",
+      "establishedNote": "1992年组建，1993年2月注册；前身1984年"
     },
     {
       "id": 96,
@@ -1429,7 +1727,10 @@
       "source": "https://www.namkwong.com.mo/col/col1852/index.html",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1949",
+      "establishedSource": "https://www.cup.edu.cn/kjc/docs/2017-09/20170918114123472035.pdf",
+      "establishedNote": "集团资料称1949年8月成立"
     },
     {
       "id": 99,
@@ -1443,7 +1744,10 @@
       "source": "https://www.crhc.cn/",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "2010-12-22",
+      "establishedSource": "https://www.crhc.cn/content_file/shzr/zrbg/2022/7/05145b5232bd436e90e522fc97e7cda5.pdf",
+      "establishedNote": "集团官网社会责任报告"
     },
     {
       "id": 100,
@@ -1457,7 +1761,10 @@
       "source": "https://www.ccic.com/cpyc/index.html",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1980",
+      "establishedSource": "https://www.ccic.com/",
+      "establishedNote": "集团官网称中国中检创建于1980年；工商注册1987年"
     },
     {
       "id": 54,
@@ -1471,7 +1778,10 @@
       "source": "https://www.ctg.cn/",
       "recruitmentLabel": "招聘栏目",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1987-01-03",
+      "establishedSource": "https://www.ctg.cn/2026-05-14/7d91ab85-fddc-439e-be4c-0f1e0695a2851778746032064.pdf",
+      "establishedNote": "所属上市公司年报所列集团成立日期；集团历史前身可追溯1923年。"
     },
     {
       "id": 95,
@@ -1485,7 +1795,11 @@
       "source": "https://www.chinaoct.com/",
       "recruitmentLabel": "社会招聘",
       "note": "",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1985-11-11",
+      "establishedSource": "https://sz.jnu.edu.cn/2015/0317/c10973a307300/page.psp",
+      "establishedNote": "暨南大学发布的集团资料",
+      "socialRecruitment": "https://www.chinaoct.com/hqc/rlzy84/645349/index.html"
     },
     {
       "id": "finance-1",
@@ -1504,7 +1818,9 @@
       "note": "",
       "aliases": "农发行",
       "reference": "财政部公开名单整理",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1994",
+      "establishedSource": "https://www.adbc.com.cn/n4/n13/c534994/attr/534995.pdf"
     },
     {
       "id": "finance-2",
@@ -1523,7 +1839,9 @@
       "note": "",
       "aliases": "进出口行",
       "reference": "财政部公开名单整理",
-      "auditNote": "官网本轮连接超时；招聘目录由官网已索引招聘材料确认，未验证实时可达性。"
+      "auditNote": "官网本轮连接超时；招聘目录由官网已索引招聘材料确认，未验证实时可达性。",
+      "established": "1994",
+      "establishedSource": "https://static.sse.com.cn/disclosure/bond/announcement/common/c/new/2026-04-30/0000_20260430_Q0D3.pdf"
     },
     {
       "id": "finance-3",
@@ -1542,7 +1860,9 @@
       "note": "",
       "aliases": "国开行",
       "reference": "财政部公开名单整理",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1994-03",
+      "establishedSource": "https://www.cdb.com.cn/khfw/ywxjsc/201601/P020160129494154366349.pdf"
     },
     {
       "id": "finance-4",
@@ -1561,7 +1881,11 @@
       "note": "",
       "aliases": "工商银行 工行",
       "reference": "财政部公开名单整理",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1984-01-01",
+      "establishedSource": "https://www.icbc.com.cn/ICBCLtd/%E5%85%B3%E4%BA%8E%E6%88%91%E8%A1%8C/%E5%8E%86%E5%8F%B2%E5%9B%9E%E7%9C%B8/",
+      "campusRecruitment": "https://job.icbc.com.cn/",
+      "socialRecruitment": "https://job.icbc.com.cn/"
     },
     {
       "id": "finance-5",
@@ -1580,7 +1904,9 @@
       "note": "",
       "aliases": "农业银行 农行",
       "reference": "财政部公开名单整理",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1951-07-10",
+      "establishedSource": "https://www.abchina.com.cn/cn/AboutABC/nhfm/nhjj/"
     },
     {
       "id": "finance-6",
@@ -1599,7 +1925,9 @@
       "note": "",
       "aliases": "中国银行 中行",
       "reference": "财政部公开名单整理",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1912-02-05",
+      "establishedSource": "https://www.boc.cn/aboutboc/ab8/201202/t20120229_1726008.html"
     },
     {
       "id": "finance-7",
@@ -1618,7 +1946,11 @@
       "note": "",
       "aliases": "建设银行 建行",
       "reference": "财政部公开名单整理",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1954-10-01",
+      "establishedSource": "https://www2.ccb.com/cn/ccbtoday/news/565733592100.html",
+      "campusRecruitment": "https://job.ccb.com/",
+      "socialRecruitment": "https://job.ccb.com/"
     },
     {
       "id": "finance-8",
@@ -1637,7 +1969,11 @@
       "note": "",
       "aliases": "交通银行 交行",
       "reference": "财政部公开名单整理",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1908",
+      "establishedSource": "https://www.bankcomm.com.hk/hk/shtml/bhk/cn/2012930/2013215/list.shtml",
+      "campusRecruitment": "https://job.bankcomm.com/",
+      "socialRecruitment": "https://job.bankcomm.com/"
     },
     {
       "id": "finance-9",
@@ -1656,7 +1992,10 @@
       "note": "2027届校园招聘平台；其他招聘安排请关注公司最新公告。",
       "aliases": "中国信保 信保",
       "reference": "财政部公开名单整理",
-      "auditNote": "2027 校园招聘的企业发布公告（南开大学官方就业平台，2026-10-14）指定此入口，报名至 2026-11-05。信保旧官网导航所指 sinosure.zhiye.com 在本轮实际跳转 /404，故不采用旧入口。"
+      "auditNote": "2027 校园招聘的企业发布公告（南开大学官方就业平台，2026-10-14）指定此入口，报名至 2026-11-05。信保旧官网导航所指 sinosure.zhiye.com 在本轮实际跳转 /404，故不采用旧入口。",
+      "established": "2001-12-18",
+      "establishedSource": "https://sd.sinosure.com.cn/xwzx/ndbd/ndbg_2025/",
+      "campusRecruitment": "https://sinosure.zhaopin.com/"
     },
     {
       "id": "finance-10",
@@ -1675,7 +2014,9 @@
       "note": "",
       "aliases": "中国人保 人保",
       "reference": "财政部公开名单整理",
-      "auditNote": "官网首页明确链接。"
+      "auditNote": "官网首页明确链接。",
+      "established": "1949-10",
+      "establishedSource": "https://www.picc.com.cn/xwzx/gkxx/jbxx/201909/t20190925_380.html"
     },
     {
       "id": "finance-11",
@@ -1694,7 +2035,9 @@
       "note": "",
       "aliases": "中国人寿 国寿",
       "reference": "财政部公开名单整理",
-      "auditNote": "官网首页明确链接。"
+      "auditNote": "官网首页明确链接。",
+      "established": "1949",
+      "establishedSource": "https://www.chinalife.com.cn/chinalife/gywm/jtjs/zgrsjs/"
     },
     {
       "id": "finance-12",
@@ -1770,7 +2113,9 @@
       "note": "",
       "aliases": "",
       "reference": "财政部公开名单整理",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1979",
+      "establishedSource": "https://www.group.citic/html/About_CITIC/Brief_Introduction/"
     },
     {
       "id": "finance-14",
@@ -1789,7 +2134,9 @@
       "note": "",
       "aliases": "",
       "reference": "财政部公开名单整理",
-      "auditNote": "官网首页明确链接。"
+      "auditNote": "官网首页明确链接。",
+      "established": "1983-08-18",
+      "establishedSource": "https://www.everbright.com/zh/news/%E7%86%B1%E7%83%88%E7%A5%9D%E8%B3%80%E4%B8%AD%E5%9C%8B%E5%85%89%E5%A4%A7%E9%9B%86%E5%9C%98%E6%88%90%E7%AB%8B36%E5%91%A8%E5%B9%B4-%E5%BB%BA%E8%A8%AD%E4%B8%96%E7%95%8C%E4%B8%80%E6%B5%81%E9%87%91%E8%9E%8D%E6%8E%A7%E8%82%A1%E9%9B%86%E5%9C%98"
     },
     {
       "id": "finance-15",
@@ -1808,7 +2155,9 @@
       "note": "",
       "aliases": "中投公司 中投",
       "reference": "财政部公开名单整理",
-      "auditNote": "curl 获取页面确认；浏览抓取工具受站点限制。"
+      "auditNote": "curl 获取页面确认；浏览抓取工具受站点限制。",
+      "established": "2007-09-29",
+      "establishedSource": "https://www.boc.cn/big5/invester/ir5/200810/t20081007_7064.html"
     },
     {
       "id": "finance-22",
@@ -1884,7 +2233,9 @@
       "note": "原中国华融资产管理股份有限公司，2024年更名，现为中信集团成员。",
       "aliases": "中国华融 华融 中信金融资产 中信金资",
       "reference": "财政部公开名单整理",
-      "auditNote": "2021 名录原名中国华融资产管理股份有限公司；2024 年 1 月更名，现为中信集团成员。"
+      "auditNote": "2021 名录原名中国华融资产管理股份有限公司；2024 年 1 月更名，现为中信集团成员。",
+      "established": "1999-11-01",
+      "establishedSource": "https://www.famc.citic/m/tzzgx/tzzfw/cjwt/index.shtml"
     },
     {
       "id": "finance-17",
@@ -1903,7 +2254,11 @@
       "note": "",
       "aliases": "",
       "reference": "财政部公开名单整理",
-      "auditNote": "官网首页明确链接；另有社会招聘栏目 liName=85。"
+      "auditNote": "官网首页明确链接；另有社会招聘栏目 liName=85。",
+      "established": "2016-12-11",
+      "establishedSource": "https://www.gwamcc.com/kindeditor/attached/file/20251014/20251014084853_5184.pdf",
+      "establishedNote": "股份公司成立，前身成立于1999年",
+      "socialRecruitment": "https://www.gwamcc.com/JobInfo.aspx?liName=85"
     },
     {
       "id": "finance-18",
@@ -1922,7 +2277,9 @@
       "note": "",
       "aliases": "",
       "reference": "财政部公开名单整理",
-      "auditNote": ""
+      "auditNote": "",
+      "established": "1999-10",
+      "establishedSource": "https://www.coamc.com.cn/dfzch/"
     },
     {
       "id": "finance-19",
@@ -1941,7 +2298,9 @@
       "note": "",
       "aliases": "",
       "reference": "财政部公开名单整理",
-      "auditNote": "2026-10-09 官网招聘公告明确指定。"
+      "auditNote": "2026-10-09 官网招聘公告明确指定。",
+      "established": "1999-04",
+      "establishedSource": "https://www.cinda.com.cn/home/wap/cn/xdjt/gyxd/gsjs/index.shtml"
     },
     {
       "id": "finance-20",
@@ -1979,7 +2338,10 @@
       "note": "暂未确认官方招聘入口，可先从官网查看最新公告。",
       "aliases": "国家融担基金",
       "reference": "财政部公开名单整理",
-      "auditNote": "尚未核实官方招聘栏目或官方历史招聘公告，不将官网首页冒充招聘入口。官网公司资讯当前可见10页、网站地图和公开索引均未找到招聘公告。"
+      "auditNote": "尚未核实官方招聘栏目或官方历史招聘公告，不将官网首页冒充招聘入口。官网公司资讯当前可见10页、网站地图和公开索引均未找到招聘公告。",
+      "established": "2018",
+      "establishedSource": "https://finance.caixin.com/2018-08-08/101312815.html",
+      "establishedNote": "2018年成立"
     },
     {
       "id": "finance-27",
@@ -1998,7 +2360,9 @@
       "note": "经财政部批准纳入中央金融企业名录，依据国家农担联盟官网补充收录。",
       "aliases": "国家农担联盟 国家农担",
       "reference": "财政部公开名单整理",
-      "auditNote": "补充条目：公司官方 2022-10-31 招聘公告明确经财政部批准列入中央金融企业名录。"
+      "auditNote": "补充条目：公司官方 2022-10-31 招聘公告明确经财政部批准列入中央金融企业名录。",
+      "established": "2016-05-06",
+      "establishedSource": "https://www.nacga.cn/about/company.html"
     },
     {
       "id": "other-3",
