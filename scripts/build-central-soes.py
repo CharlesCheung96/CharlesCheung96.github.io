@@ -28,14 +28,33 @@ for major_number, (scope, industries) in enumerate(scopes.items(), 1):
     subsections = []
     for number, (category, companies) in enumerate(industries.items(), 1):
         cards = []
+        def date_key(company):
+            value = company.get('established')
+            parts = [int(x) for x in value.split('-')] if value else []
+            parts += [0] * (3 - len(parts))
+            return (value is None, -parts[0], -parts[1], -parts[2], company['name'])
+        companies = sorted(companies, key=date_key)
         for company in companies:
             keywords = " ".join([company["name"], company.get("aliases", ""), category, company["scope"]])
-            links = link(company.get("website"), "官网", "website") + link(company.get("recruitment"), company.get("recruitmentLabel", "招聘入口"), "recruit")
+            links = link(company.get("website"), "官网", "website")
+            if company.get('campusRecruitment') or company.get('socialRecruitment'):
+                for field, label in [('campusRecruitment', '校招'), ('socialRecruitment', '社招')]:
+                    if company.get(field):
+                        links += link(company[field], label, 'recruit', '招聘入口，具体岗位以企业公告为准')
+            else:
+                links += link(company.get('recruitment'), '招聘入口', 'recruit')
             note = company.get("note", "")
             provenance = link(company.get("source"), "入口来源", "source") if company.get("source") else ""
             note_html = f'\n          <p class="note">{esc(note)}</p>' if note else ''
+            date = company.get('established')
+            date_parts = date.split('-') if date else []
+            date_label = date_parts[0] + '年' if date_parts else ''
+            if len(date_parts) > 1: date_label += str(int(date_parts[1])) + '月'
+            if len(date_parts) > 2: date_label += str(int(date_parts[2])) + '日'
+            date_title = company.get('establishedNote') or '查看成立时间来源'
+            date_html = link(company.get('establishedSource'), f'{date_label}成立', 'founded', date_title) if date else '<span class="founded pending">成立时间待核实</span>'
             cards.append(f'''<article class="company" data-search="{esc(keywords.lower())}" data-scope="{esc(company['scope'])}">
-          <h4 class="company-name">{esc(company['name'])}</h4>{note_html}
+          <div class="company-date">{date_html}</div><h4 class="company-name">{esc(company['name'])}</h4>{note_html}
           <div class="company-bottom"><div class="actions">{links}</div>{provenance}</div>
         </article>''')
         subsections.append(f'<section class="industry" data-category="{esc(category)}" id="industry-{major_number}-{number}"><div class="section-heading"><h3><span>{number:02d}</span> {esc(category)}</h3><span class="group-count">{len(companies)} 家</span></div><div class="company-grid">' + "\n".join(cards) + '</div></section>')

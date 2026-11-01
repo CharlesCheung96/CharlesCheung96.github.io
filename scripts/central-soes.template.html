@@ -19,8 +19,8 @@
 <main class="container">
   <section class="hero" aria-labelledby="title">
     <h1 id="title">中国央企<span>名录</span></h1>
-    <p class="intro">按行业查找企业、官网与招聘入口。</p>
-    <div class="hero-meta"><span>整理日期 <time datetime="{{CHECKED_ON}}">{{CHECKED_ON}}</time></span><a href="#sources">名单口径与来源 ↓</a></div>
+    <p class="intro">探索央企，发现方向。<br>按行业浏览官网、招聘入口与成立时间。</p>
+    <div class="hero-meta"><span>整理日期 <time datetime="{{CHECKED_ON}}">{{CHECKED_ON}}</time></span><span>成立时间由近到远排列，待核实排在最后；点击日期查看来源</span></div>
     <div class="stats"><div><b>{{TOTAL}}<small> 家</small></b><span>收录企业</span></div><div><b>100<small> 家</small></b><span>国资委监管央企</span></div><div><b>{{GROUPS}}<small> 类</small></b><span>行业小类</span></div><div><b>{{RECRUITMENT_TOTAL}}<small> 个</small></b><span>已核实招聘入口</span></div></div>
   </section>
   <section class="finder" aria-label="搜索与筛选">
@@ -32,11 +32,6 @@
   <noscript><p class="notice">全部名录和链接可直接浏览；开启 JavaScript 后可使用搜索与筛选。</p></noscript>
   <div id="empty" class="empty" hidden><h2>没有找到匹配的企业</h2><p>试试简称、行业词，或重置筛选条件。</p></div>
   <div id="directory">{{SECTIONS}}</div>
-  <section class="sources" id="sources"><div class="eyebrow">ABOUT THIS DIRECTORY</div><h2>名单口径与来源</h2>
-    <p>国资委央企依据公开名录收录；金融企业按 2021 年名单及后续公告整理，不代表最新完整名单；其他央企为部分收录。行业分类仅供浏览参考。</p>
-    <p>招聘安排以企业最新公告为准，未核实的入口已标注。</p>
-    <ul>{{SOURCES}}</ul>
-  </section>
 </main>
 <footer class="footer"><a href="/">Charles’ Blog</a><span>央企官网与招聘入口</span><a href="#title">回到顶部 ↑</a></footer>
 </body>
