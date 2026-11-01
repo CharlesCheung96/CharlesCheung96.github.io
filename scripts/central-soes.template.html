@@ -21,16 +21,18 @@
   <section class="hero" aria-labelledby="title">
     <div class="eyebrow"><span class="status-dot"></span> CHINA CENTRAL SOE DIRECTORY</div>
     <h1 id="title">中国央企<span>名录</span></h1>
-    <p class="intro">按行业整理中央企业，直达官网和官方招聘渠道。<br>搜索企业名称、简称或行业，找到你关注的企业。</p>
+    <p class="intro">先选企业大类，再按行业小类查找，直达官网和官方招聘渠道。<br>也可以搜索企业名称、简称或行业。</p>
     <div class="hero-meta"><span>整理日期 <time datetime="{{CHECKED_ON}}">{{CHECKED_ON}}</time></span><a href="#sources">名单口径与来源 ↓</a></div>
-    <div class="stats"><div><b>{{TOTAL}}<small> 家</small></b><span>收录企业</span></div><div><b>100<small> 家</small></b><span>国资委监管央企</span></div><div><b>{{GROUPS}}<small> 类</small></b><span>行业分组</span></div><div><b>{{RECRUITMENT_TOTAL}}<small> 个</small></b><span>已核实招聘入口</span></div></div>
+    <div class="stats"><div><b>{{TOTAL}}<small> 家</small></b><span>收录企业</span></div><div><b>100<small> 家</small></b><span>国资委监管央企</span></div><div><b>{{GROUPS}}<small> 类</small></b><span>行业小类</span></div><div><b>{{RECRUITMENT_TOTAL}}<small> 个</small></b><span>已核实招聘入口</span></div></div>
   </section>
   <section class="finder" aria-label="搜索与筛选">
     <div class="search-row"><label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">搜索企业名称、简称或行业</span><input id="search" type="search" placeholder="搜索企业名称、简称或行业，例如：中核、电网、银行" autocomplete="off"></label><button id="reset" type="button">重置筛选</button></div>
-    <div class="scope-filters" role="group" aria-label="企业类别"><button type="button" class="scope-filter active" data-scope-filter="" aria-pressed="true">全部企业</button><button type="button" class="scope-filter" data-scope-filter="国资委监管央企" aria-pressed="false">国资委监管央企</button><button type="button" class="scope-filter" data-scope-filter="中央金融企业" aria-pressed="false">中央金融企业</button><button type="button" class="scope-filter" data-scope-filter="其他中央企业" aria-pressed="false">其他中央企业</button></div>
-    <div class="category-filters" role="group" aria-label="按行业筛选">{{FILTERS}}</div>
+    <div class="filter-label" id="major-filter-label">大类 <span>选择企业类别</span></div>
+    <div class="scope-filters" role="group" aria-labelledby="major-filter-label">{{SCOPE_FILTERS}}</div>
+    <div class="filter-label" id="minor-filter-label">小类 <span id="subcategory-context">全部大类下的行业</span></div>
+    <div class="category-filters" role="group" aria-labelledby="minor-filter-label">{{FILTERS}}</div>
   </section>
-  <div class="directory-bar"><p id="results" role="status" aria-live="polite">共 {{TOTAL}} 家企业 · 按行业分类</p><span>外部链接均在新窗口打开 ↗</span></div>
+  <div class="directory-bar"><p id="results" role="status" aria-live="polite">共 {{TOTAL}} 家企业 · 按大类与小类分组</p><span>外部链接均在新窗口打开 ↗</span></div>
   <noscript><p class="notice">全部名录和链接可直接浏览；开启 JavaScript 后可使用搜索与筛选。</p></noscript>
   <div id="empty" class="empty" hidden><h2>没有找到匹配的企业</h2><p>试试简称、行业词，或重置筛选条件。</p></div>
   <div id="directory">{{SECTIONS}}</div>
