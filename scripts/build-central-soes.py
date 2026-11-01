@@ -1,5 +1,6 @@
 """Render the static directory from the reviewed, source-backed JSON catalogue."""
 import html
+import hashlib
 import json
 from pathlib import Path
 
@@ -48,7 +49,8 @@ sources = ''.join(f'<li>{link(s["url"], s["title"])}<span>{esc(s.get("note", "")
 total = len(data['companies'])
 recruitment_total = sum(bool(x.get('recruitment')) for x in data['companies'])
 output = (ROOT / "scripts/central-soes.template.html").read_text()
-for key, value in {"SECTIONS": '\n'.join(sections), "FILTERS": filters, "SCOPE_FILTERS": scope_filters, "SOURCES": sources, "TOTAL": str(total), "GROUPS": str(len(groups)), "RECRUITMENT_TOTAL": str(recruitment_total), "CHECKED_ON": data['checkedOn']}.items():
+asset_version = hashlib.sha256((PAGE / "style.css").read_bytes() + (PAGE / "directory.js").read_bytes()).hexdigest()[:12]
+for key, value in {"SECTIONS": '\n'.join(sections), "FILTERS": filters, "SCOPE_FILTERS": scope_filters, "SOURCES": sources, "TOTAL": str(total), "GROUPS": str(len(groups)), "RECRUITMENT_TOTAL": str(recruitment_total), "CHECKED_ON": data['checkedOn'], "ASSET_VERSION": asset_version}.items():
     output = output.replace('{{' + key + '}}', value)
 (PAGE / 'index.html').write_text(output)
 print(f"Rendered {total} companies in {len(groups)} categories; {recruitment_total} recruitment links.")
