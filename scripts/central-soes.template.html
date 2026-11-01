@@ -17,28 +17,24 @@
   <nav aria-label="主导航"><a href="/posts/">文章</a><a href="/categories/">分类</a><a href="/tags/">标签</a><a class="current" href="/central-soes/" aria-current="page">央企名录</a><a href="/italy-weather/">天气</a><a href="/about/">关于</a></nav>
 </div></header>
 <main class="container">
-  <div class="breadcrumb"><a href="/">首页</a><span>/</span>央企名录</div>
   <section class="hero" aria-labelledby="title">
-    <div class="eyebrow"><span class="status-dot"></span> CHINA CENTRAL SOE DIRECTORY</div>
     <h1 id="title">中国央企<span>名录</span></h1>
-    <p class="intro">先选企业大类，再按行业小类查找，直达官网和官方招聘渠道。<br>也可以搜索企业名称、简称或行业。</p>
+    <p class="intro">按行业查找企业、官网与招聘入口。</p>
     <div class="hero-meta"><span>整理日期 <time datetime="{{CHECKED_ON}}">{{CHECKED_ON}}</time></span><a href="#sources">名单口径与来源 ↓</a></div>
     <div class="stats"><div><b>{{TOTAL}}<small> 家</small></b><span>收录企业</span></div><div><b>100<small> 家</small></b><span>国资委监管央企</span></div><div><b>{{GROUPS}}<small> 类</small></b><span>行业小类</span></div><div><b>{{RECRUITMENT_TOTAL}}<small> 个</small></b><span>已核实招聘入口</span></div></div>
   </section>
   <section class="finder" aria-label="搜索与筛选">
-    <div class="search-row"><label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">搜索企业名称、简称或行业</span><input id="search" type="search" placeholder="搜索企业名称、简称或行业，例如：中核、电网、银行" autocomplete="off"></label><button id="reset" type="button">重置筛选</button></div>
-    <div class="filter-label" id="major-filter-label">大类 <span>选择企业类别</span></div>
-    <div class="scope-filters" role="group" aria-labelledby="major-filter-label">{{SCOPE_FILTERS}}</div>
-    <div class="filter-label" id="minor-filter-label">小类 <span id="subcategory-context">全部大类下的行业</span></div>
-    <div class="category-filters" role="group" aria-labelledby="minor-filter-label">{{FILTERS}}</div>
+    <div class="search-row"><label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">搜索当前类别的企业或行业</span><input id="search" type="search" placeholder="搜索当前类别的企业或行业" autocomplete="off"></label><button id="reset" type="button">重置</button></div>
+    <div class="scope-filters" role="group" aria-label="企业类别">{{SCOPE_FILTERS}}</div>
+    <div class="category-filters" role="group" aria-label="行业分类">{{FILTERS}}</div>
   </section>
-  <div class="directory-bar"><p id="results" role="status" aria-live="polite">共 {{TOTAL}} 家企业 · 按大类与小类分组</p><span>外部链接均在新窗口打开 ↗</span></div>
+  <div class="directory-bar"><p id="results" role="status" aria-live="polite">共 {{TOTAL}} 家企业</p></div>
   <noscript><p class="notice">全部名录和链接可直接浏览；开启 JavaScript 后可使用搜索与筛选。</p></noscript>
   <div id="empty" class="empty" hidden><h2>没有找到匹配的企业</h2><p>试试简称、行业词，或重置筛选条件。</p></div>
   <div id="directory">{{SECTIONS}}</div>
   <section class="sources" id="sources"><div class="eyebrow">ABOUT THIS DIRECTORY</div><h2>名单口径与来源</h2>
-    <p>国资委监管央企按国务院国资委公开名录收录 100 家；中央金融企业以财政部 2021 年公开的 26 家名单为底册，补充国家农担联盟，并按已核实信息更新企业名称，不表示财政部已公布 2026 年完整更新名单；其他中央企业补充收录 4 家，未穷尽中央文化等企业。行业分类是为方便浏览所作的整理，不属于官方分类。</p>
-    <p>“招聘入口”包含企业统一招聘平台及官网人才招聘栏目；官方公告采用第三方招聘服务时，保留官方公告作为入口来源。链接不代表当前有在招岗位。未核实的入口明确标注，企业变更与招聘安排以最新官方公告为准。</p>
+    <p>国资委央企依据公开名录收录；金融企业按 2021 年名单及后续公告整理，不代表最新完整名单；其他央企为部分收录。行业分类仅供浏览参考。</p>
+    <p>招聘安排以企业最新公告为准，未核实的入口已标注。</p>
     <ul>{{SOURCES}}</ul>
   </section>
 </main>
